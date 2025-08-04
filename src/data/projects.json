@@ -1,0 +1,374 @@
+[
+  {
+    "id": "biblusi",
+    "image": "/images/biblusi.png",
+    "year": "04/2021 - 12/2022",
+    "titleKey": "projects.biblusi.title",
+    "descriptionKey": "projects.biblusi.description",
+    "projectNameKey": "projects.biblusi.project-name",
+    "problemKey": "projects.biblusi.problem",
+    "solvingBlockNameKey": "projects.biblusi.solving-block-name",
+    "solvingKey": "projects.biblusi.solving",
+    "usersBlockNameKey": "projects.biblusi.users-block-name",
+    "usersPastKey": "projects.biblusi.users-past",
+    "usersNowKey": "projects.biblusi.users-now",
+    "roleKey": "projects.biblusi.role-name",
+    "positionKey": "projects.biblusi.position",
+    "positionKey2": "projects.biblusi.position-2",
+    "positionKey3": "projects.biblusi.position-3",
+    "toolsNameKey": "projects.tools-name",
+    "buttonKey": "projects.button",
+    "service1Key": "projects.biblusi.service1",
+    "service2Key": "projects.biblusi.service2",
+    "hasScreenVideo": true,
+
+    "projectDetails": {
+      "review-subtitle-01": "projectDetails.biblusi.review-subtitle-01",
+      "review-subtitle-02": "projectDetails.biblusi.review-subtitle-02",
+      "review-subtitle-03": "projectDetails.biblusi.review-subtitle-03",
+
+      "highlights-list-title-01": "projectDetails.biblusi.highlights-list-title-01",
+      "highlights-list-title-02": "projectDetails.biblusi.highlights-list-title-02",
+      "highlights-list-title-03": "projectDetails.biblusi.highlights-list-title-03",
+      "highlights-01-list-01": "projectDetails.biblusi.highlights-01-list-01",
+      "highlights-01-list-02": "projectDetails.biblusi.highlights-01-list-02",
+      "highlights-01-list-03": "projectDetails.biblusi.highlights-01-list-03",
+      "highlights-01-list-04": "projectDetails.biblusi.highlights-01-list-04",
+      "highlights-01-list-05": "projectDetails.biblusi.highlights-01-list-05",
+      "highlights-02-list-01": "projectDetails.biblusi.highlights-02-list-01",
+      "highlights-02-list-02": "projectDetails.biblusi.highlights-02-list-02",
+      "highlights-02-list-03": "projectDetails.biblusi.highlights-02-list-03",
+      "highlights-02-list-04": "projectDetails.biblusi.highlights-02-list-04",
+      "highlights-02-list-05": "projectDetails.biblusi.highlights-02-list-05",
+      "highlights-03-text-01": "projectDetails.biblusi.highlights-03-text-01",
+      "highlights-03-text-02": "projectDetails.biblusi.highlights-03-text-02",
+
+      "problem-01-title": "projectDetails.biblusi.problem-01-title",
+      "problem-01-text": "projectDetails.biblusi.problem-01-text",
+      "problem-01-image": "/projects/biblusi/old-categories.png",
+      "problem-02-title": "projectDetails.biblusi.problem-02-title",
+      "problem-02-text": "projectDetails.biblusi.problem-02-text",
+      "problem-02-image": "/projects/biblusi/old-hero-section.png",
+      "problem-03-title": "projectDetails.biblusi.problem-03-title",
+      "problem-03-text": "projectDetails.biblusi.problem-03-text",
+      "problem-04-title": "projectDetails.biblusi.problem-04-title",
+      "problem-04-text": "projectDetails.biblusi.problem-04-text",
+      "problem-05-title": "projectDetails.biblusi.problem-05-title",
+      "problem-05-text": "projectDetails.biblusi.problem-05-text",
+
+      "main-strategy": "projectDetails.biblusi.main-strategy",
+      "plan-01": "projectDetails.biblusi.strategy-plan-01",
+      "plan-02": "projectDetails.biblusi.strategy-plan-02",
+      "plan-03": "projectDetails.biblusi.strategy-plan-03",
+      "plan-04": "projectDetails.biblusi.strategy-plan-04",
+      "plan-05": "projectDetails.biblusi.strategy-plan-05",
+      "plan-01-title": "projectDetails.biblusi.strategy-plan-01-title",
+      "plan-02-title": "projectDetails.biblusi.strategy-plan-02-title",
+      "plan-03-title": "projectDetails.biblusi.strategy-plan-03-title",
+      "plan-04-title": "projectDetails.biblusi.strategy-plan-04-title",
+      "plan-05-title": "projectDetails.biblusi.strategy-plan-05-title",
+
+      "solution-implementation": "projectDetails.biblusi.solution-implementation"
+    },
+
+    "images": {
+      "slider": [
+        "/projects/biblusi/slider/old-hero.png",
+        "/projects/biblusi/slider/new-hero.png"
+      ]
+    },
+
+    "outcomes": {
+      "labelVisitorsGrowth": "projectDetails.biblusi.label-visitors-growth",
+      "visitorsGrowth": "projectDetails.biblusi.visitors-growth",
+      "labelSalesGrowth": "projectDetails.biblusi.label-sales-growth",
+      "salesGrowth": "projectDetails.biblusi.sales-growth",
+      "labelCustomerSatisfactionGrowth": "projectDetails.biblusi.label-customer-satisfaction-growth",
+      "customerSatisfactionGrowth": "projectDetails.biblusi.customer-satisfaction-growth",
+      "labelBounceRate": "projectDetails.biblusi.label-bounce-rate",
+      "bounceRate": "projectDetails.biblusi.bounce-rate"
+    }
+  },
+
+  {
+    "id": "kings-garden",
+    "image": "/images/kingsGarden.png",
+    "year": "01/2023 - 07/2024",
+    "titleKey": "projects.kingsGarden.title",
+    "descriptionKey": "projects.kingsGarden.description",
+    "projectNameKey": "projects.kingsGarden.project-name",
+    "problemKey": "projects.kingsGarden.problem",
+    "solvingBlockNameKey": "projects.kingsGarden.solving-block-name",
+    "solvingKey": "projects.kingsGarden.solving",
+    "usersBlockNameKey": "projects.kingsGarden.users-block-name",
+    "usersPastKey": "projects.kingsGarden.users-past",
+    "usersNowKey": "projects.kingsGarden.users-now",
+    "roleKey": "projects.kingsGarden.role-name",
+    "positionKey": "projects.kingsGarden.position",
+    "positionKey2": "projects.kingsGarden.position-2",
+    "positionKey3": "projects.kingsGarden.position-3",
+    "toolsNameKey": "projects.tools-name",
+    "buttonKey": "projects.button",
+    "service1Key": "projects.kingsGarden.service1",
+    "service2Key": "projects.kingsGarden.service2",
+    "hasScreenVideo": true,
+
+    "projectDetails": {
+      "review-subtitle-01": "projectDetails.kingsGarden.review-subtitle-01",
+      "review-subtitle-02": "projectDetails.kingsGarden.review-subtitle-02",
+      "review-subtitle-03": "projectDetails.kingsGarden.review-subtitle-03",
+
+      "highlights-list-title-01": "projectDetails.kingsGarden.highlights-list-title-01",
+      "highlights-list-title-02": "projectDetails.kingsGarden.highlights-list-title-02",
+      "highlights-list-title-03": "projectDetails.kingsGarden.highlights-list-title-03",
+      "highlights-01-list-01": "projectDetails.kingsGarden.highlights-01-list-01",
+      "highlights-01-list-02": "projectDetails.kingsGarden.highlights-01-list-02",
+      "highlights-01-list-03": "projectDetails.kingsGarden.highlights-01-list-03",
+      "highlights-01-list-04": "projectDetails.kingsGarden.highlights-01-list-04",
+      "highlights-01-list-05": "projectDetails.kingsGarden.highlights-01-list-05",
+      "highlights-02-list-01": "projectDetails.kingsGarden.highlights-02-list-01",
+      "highlights-02-list-02": "projectDetails.kingsGarden.highlights-02-list-02",
+      "highlights-02-list-03": "projectDetails.kingsGarden.highlights-02-list-03",
+      "highlights-02-list-04": "projectDetails.kingsGarden.highlights-02-list-04",
+      "highlights-02-list-05": "projectDetails.kingsGarden.highlights-02-list-05",
+      "highlights-03-text-01": "projectDetails.kingsGarden.highlights-03-text-01",
+      "highlights-03-text-02": "projectDetails.kingsGarden.highlights-03-text-02",
+
+      "problem-01-title": "projectDetails.kingsGarden.problem-01-title",
+      "problem-01-text": "projectDetails.kingsGarden.problem-01-text",
+      "problem-01-image": "/projects/kings-garden/digital-identity.png",
+      "problem-02-title": "projectDetails.kingsGarden.problem-02-title",
+      "problem-02-text": "projectDetails.kingsGarden.problem-02-text",
+      "problem-02-image": "/projects/kings-garden/visual-content.png",
+      "problem-03-title": "projectDetails.kingsGarden.problem-03-title",
+      "problem-03-text": "projectDetails.kingsGarden.problem-03-text",
+      "problem-04-title": "projectDetails.kingsGarden.problem-04-title",
+      "problem-04-text": "projectDetails.kingsGarden.problem-04-text",
+      "problem-05-title": "projectDetails.kingsGarden.problem-05-title",
+      "problem-05-text": "projectDetails.kingsGarden.problem-05-text",
+
+      "main-strategy": "projectDetails.kingsGarden.main-strategy",
+      "plan-01": "projectDetails.kingsGarden.strategy-plan-01",
+      "plan-02": "projectDetails.kingsGarden.strategy-plan-02",
+      "plan-03": "projectDetails.kingsGarden.strategy-plan-03",
+      "plan-04": "projectDetails.kingsGarden.strategy-plan-04",
+      "plan-05": "projectDetails.kingsGarden.strategy-plan-05",
+      "plan-01-title": "projectDetails.kingsGarden.strategy-plan-01-title",
+      "plan-02-title": "projectDetails.kingsGarden.strategy-plan-02-title",
+      "plan-03-title": "projectDetails.kingsGarden.strategy-plan-03-title",
+      "plan-04-title": "projectDetails.kingsGarden.strategy-plan-04-title",
+      "plan-05-title": "projectDetails.kingsGarden.strategy-plan-05-title",
+
+      "solution-implementation": "projectDetails.kingsGarden.solution-implementation"
+    },
+
+    "images": {
+      "slider": [
+        "/projects/kings-garden/slider/old-panoramic-view.jpg",
+        "/projects/kings-garden/slider/new-panoramic-view.png"
+      ]
+    },
+
+    "outcomes": {
+      "labelVisitorsGrowth": "projectDetails.kingsGarden.label-visitors-growth",
+      "visitorsGrowth": "projectDetails.kingsGarden.visitors-growth",
+      "labelSalesGrowth": "projectDetails.kingsGarden.label-sales-growth",
+      "salesGrowth": "projectDetails.kingsGarden.sales-growth",
+      "labelCustomerSatisfactionGrowth": "projectDetails.kingsGarden.label-customer-satisfaction-growth",
+      "customerSatisfactionGrowth": "projectDetails.kingsGarden.customer-satisfaction-growth",
+      "labelBounceRate": "projectDetails.kingsGarden.label-bounce-rate",
+      "bounceRate": "projectDetails.kingsGarden.bounce-rate"
+    }
+  },
+
+  {
+    "id": "svanidze-olive-oil",
+    "image": "/images/svanidzeOlive.png",
+    "year": "08/2024 - 02/2025",
+    "titleKey": "projects.svanidzeOlive.title",
+    "descriptionKey": "projects.svanidzeOlive.description",
+    "projectNameKey": "projects.svanidzeOlive.project-name",
+    "problemKey": "projects.svanidzeOlive.problem",
+    "solvingBlockNameKey": "projects.svanidzeOlive.solving-block-name",
+    "solvingKey": "projects.svanidzeOlive.solving",
+    "usersBlockNameKey": "projects.svanidzeOlive.users-block-name",
+    "usersPastKey": "projects.svanidzeOlive.users-past",
+    "usersNowKey": "projects.svanidzeOlive.users-now",
+    "roleKey": "projects.svanidzeOlive.role-name",
+    "positionKey": "projects.svanidzeOlive.position",
+    "positionKey2": "projects.svanidzeOlive.position-2",
+    "positionKey3": "projects.svanidzeOlive.position-3",
+    "toolsNameKey": "projects.tools-name",
+    "buttonKey": "projects.button",
+    "service1Key": "projects.svanidzeOlive.service1",
+    "service2Key": "projects.svanidzeOlive.service2",
+    "hasScreenVideo": true,
+
+    "projectDetails": {
+      "review-subtitle-01": "projectDetails.svanidzeOlive.review-subtitle-01",
+      "review-subtitle-02": "projectDetails.svanidzeOlive.review-subtitle-02",
+      "review-subtitle-03": "projectDetails.svanidzeOlive.review-subtitle-03",
+
+      "highlights-list-title-01": "projectDetails.svanidzeOlive.highlights-list-title-01",
+      "highlights-list-title-02": "projectDetails.svanidzeOlive.highlights-list-title-02",
+      "highlights-list-title-03": "projectDetails.svanidzeOlive.highlights-list-title-03",
+      "highlights-01-list-01": "projectDetails.svanidzeOlive.highlights-01-list-01",
+      "highlights-01-list-02": "projectDetails.svanidzeOlive.highlights-01-list-02",
+      "highlights-01-list-03": "projectDetails.svanidzeOlive.highlights-01-list-03",
+      "highlights-01-list-04": "projectDetails.svanidzeOlive.highlights-01-list-04",
+      "highlights-01-list-05": "projectDetails.svanidzeOlive.highlights-01-list-05",
+      "highlights-02-list-01": "projectDetails.svanidzeOlive.highlights-02-list-01",
+      "highlights-02-list-02": "projectDetails.svanidzeOlive.highlights-02-list-02",
+      "highlights-02-list-03": "projectDetails.svanidzeOlive.highlights-02-list-03",
+      "highlights-02-list-04": "projectDetails.svanidzeOlive.highlights-02-list-04",
+      "highlights-02-list-05": "projectDetails.svanidzeOlive.highlights-02-list-05",
+      "highlights-03-text-01": "projectDetails.svanidzeOlive.highlights-03-text-01",
+      "highlights-03-text-02": "projectDetails.svanidzeOlive.highlights-03-text-02",
+
+      "problem-01-title": "projectDetails.svanidzeOlive.problem-01-title",
+      "problem-01-text": "projectDetails.svanidzeOlive.problem-01-text",
+      "problem-01-image": "/projects/svanidze-olive-oil/brand-awareness.jpg",
+
+      "problem-02-title": "projectDetails.svanidzeOlive.problem-02-title",
+      "problem-02-text": "projectDetails.svanidzeOlive.problem-02-text",
+      "problem-02-image": "/projects/svanidze-olive-oil/emotional-communication.png",
+
+      "problem-03-title": "projectDetails.svanidzeOlive.problem-03-title",
+      "problem-03-text": "projectDetails.svanidzeOlive.problem-03-text",
+
+      "problem-04-title": "projectDetails.svanidzeOlive.problem-04-title",
+      "problem-04-text": "projectDetails.svanidzeOlive.problem-04-text",
+
+      "problem-05-title": "projectDetails.svanidzeOlive.problem-05-title",
+      "problem-05-text": "projectDetails.svanidzeOlive.problem-05-text",
+
+      "main-strategy": "projectDetails.svanidzeOlive.main-strategy",
+      "plan-01": "projectDetails.svanidzeOlive.strategy-plan-01",
+      "plan-02": "projectDetails.svanidzeOlive.strategy-plan-02",
+      "plan-03": "projectDetails.svanidzeOlive.strategy-plan-03",
+      "plan-04": "projectDetails.svanidzeOlive.strategy-plan-04",
+      "plan-05": "projectDetails.svanidzeOlive.strategy-plan-05",
+      "plan-01-title": "projectDetails.svanidzeOlive.strategy-plan-01-title",
+      "plan-02-title": "projectDetails.svanidzeOlive.strategy-plan-02-title",
+      "plan-03-title": "projectDetails.svanidzeOlive.strategy-plan-03-title",
+      "plan-04-title": "projectDetails.svanidzeOlive.strategy-plan-04-title",
+      "plan-05-title": "projectDetails.svanidzeOlive.strategy-plan-05-title",
+
+      "solution-implementation": "projectDetails.svanidzeOlive.solution-implementation"
+    },
+
+    "images": {
+      "slider": [
+        "/projects/svanidze-olive-oil/slider/product-01.png",
+        "/projects/svanidze-olive-oil/slider/product-02.png",
+        "/projects/svanidze-olive-oil/slider/product-03.png"
+      ]
+    },
+
+    "outcomes": {
+      "labelVisitorsGrowth": "projectDetails.svanidzeOlive.label-visitors-growth",
+      "visitorsGrowth": "projectDetails.svanidzeOlive.visitors-growth",
+      "labelSalesGrowth": "projectDetails.svanidzeOlive.label-sales-growth",
+      "salesGrowth": "projectDetails.svanidzeOlive.sales-growth",
+      "labelCustomerSatisfactionGrowth": "projectDetails.svanidzeOlive.label-customer-satisfaction-growth",
+      "customerSatisfactionGrowth": "projectDetails.svanidzeOlive.customer-satisfaction-growth",
+      "labelBounceRate": "projectDetails.svanidzeOlive.label-bounce-rate",
+      "bounceRate": "projectDetails.svanidzeOlive.bounce-rate"
+    }
+  },
+
+  {
+    "id": "business-media-georgia",
+    "image": "/images/businessMedia.png",
+    "year": "02/2025 - 05/2025",
+    "titleKey": "projects.businessMedia.title",
+    "descriptionKey": "projects.businessMedia.description",
+    "projectNameKey": "projects.businessMedia.project-name",
+    "problemKey": "projects.businessMedia.problem",
+    "solvingBlockNameKey": "projects.businessMedia.solving-block-name",
+    "solvingKey": "projects.businessMedia.solving",
+    "usersBlockNameKey": "projects.businessMedia.users-block-name",
+    "usersPastKey": "projects.businessMedia.users-past",
+    "usersNowKey": "projects.businessMedia.users-now",
+    "roleKey": "projects.businessMedia.role-name",
+    "positionKey": "projects.businessMedia.position",
+    "positionKey2": "projects.businessMedia.position-2",
+    "positionKey3": "projects.businessMedia.position-3",
+    "toolsNameKey": "projects.tools-name",
+    "buttonKey": "projects.button",
+    "service1Key": "projects.businessMedia.service1",
+    "service2Key": "projects.businessMedia.service2",
+    "hasScreenVideo": true,
+
+    "projectDetails": {
+      "review-subtitle-01": "projectDetails.businessMedia.review-subtitle-01",
+      "review-subtitle-02": "projectDetails.businessMedia.review-subtitle-02",
+      "review-subtitle-03": "projectDetails.businessMedia.review-subtitle-03",
+
+      "highlights-list-title-01": "projectDetails.businessMedia.highlights-list-title-01",
+      "highlights-list-title-02": "projectDetails.businessMedia.highlights-list-title-02",
+      "highlights-list-title-03": "projectDetails.businessMedia.highlights-list-title-03",
+      "highlights-01-list-01": "projectDetails.businessMedia.highlights-01-list-01",
+      "highlights-01-list-02": "projectDetails.businessMedia.highlights-01-list-02",
+      "highlights-01-list-03": "projectDetails.businessMedia.highlights-01-list-03",
+      "highlights-01-list-04": "projectDetails.businessMedia.highlights-01-list-04",
+      "highlights-01-list-05": "projectDetails.businessMedia.highlights-01-list-05",
+      "highlights-02-list-01": "projectDetails.businessMedia.highlights-02-list-01",
+      "highlights-02-list-02": "projectDetails.businessMedia.highlights-02-list-02",
+      "highlights-02-list-03": "projectDetails.businessMedia.highlights-02-list-03",
+      "highlights-02-list-04": "projectDetails.businessMedia.highlights-02-list-04",
+      "highlights-02-list-05": "projectDetails.businessMedia.highlights-02-list-05",
+      "highlights-03-text-01": "projectDetails.businessMedia.highlights-03-text-01",
+      "highlights-03-text-02": "projectDetails.businessMedia.highlights-03-text-02",
+
+      "problem-01-title": "projectDetails.businessMedia.problem-01-title",
+      "problem-01-text": "projectDetails.businessMedia.problem-01-text",
+      "problem-01-image": "/projects/business-media-georgia/problem-01.png",
+
+      "problem-02-title": "projectDetails.businessMedia.problem-02-title",
+      "problem-02-text": "projectDetails.businessMedia.problem-02-text",
+      "problem-02-image": "/projects/business-media-georgia/indicators-old.png",
+
+      "problem-03-title": "projectDetails.businessMedia.problem-03-title",
+      "problem-03-text": "projectDetails.businessMedia.problem-03-text",
+
+      "problem-04-title": "projectDetails.businessMedia.problem-04-title",
+      "problem-04-text": "projectDetails.businessMedia.problem-04-text",
+
+      "problem-05-title": "projectDetails.businessMedia.problem-05-title",
+      "problem-05-text": "projectDetails.businessMedia.problem-05-text",
+
+      "main-strategy": "projectDetails.businessMedia.main-strategy",
+      "plan-01": "projectDetails.businessMedia.strategy-plan-01",
+      "plan-02": "projectDetails.businessMedia.strategy-plan-02",
+      "plan-03": "projectDetails.businessMedia.strategy-plan-03",
+      "plan-04": "projectDetails.businessMedia.strategy-plan-04",
+      "plan-05": "projectDetails.businessMedia.strategy-plan-05",
+      "plan-01-title": "projectDetails.businessMedia.strategy-plan-01-title",
+      "plan-02-title": "projectDetails.businessMedia.strategy-plan-02-title",
+      "plan-03-title": "projectDetails.businessMedia.strategy-plan-03-title",
+      "plan-04-title": "projectDetails.businessMedia.strategy-plan-04-title",
+      "plan-05-title": "projectDetails.businessMedia.strategy-plan-05-title",
+
+      "solution-implementation": "projectDetails.businessMedia.solution-implementation"
+    },
+
+    "images": {
+      "slider": [
+        "/projects/business-media-georgia/slider/old-hero.png",
+        "/projects/business-media-georgia/slider/new-hero.png"
+      ]
+    },
+
+    "outcomes": {
+      "labelVisitorsGrowth": "projectDetails.businessMedia.label-visitors-growth",
+      "visitorsGrowth": "projectDetails.businessMedia.visitors-growth",
+      "labelSalesGrowth": "projectDetails.businessMedia.label-sales-growth",
+      "salesGrowth": "projectDetails.businessMedia.sales-growth",
+      "labelCustomerSatisfactionGrowth": "projectDetails.businessMedia.label-customer-satisfaction-growth",
+      "customerSatisfactionGrowth": "projectDetails.businessMedia.customer-satisfaction-growth",
+      "labelBounceRate": "projectDetails.businessMedia.label-bounce-rate",
+      "bounceRate": "projectDetails.businessMedia.bounce-rate"
+    }
+  }
+]

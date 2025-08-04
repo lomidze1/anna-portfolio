@@ -1,0 +1,28 @@
+@use "../utils/mixins" as *;
+@use "../utils/variables" as *;
+
+.form-status-container {
+  height: auto;
+
+  .form-status-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: -webkit-fill-available;
+
+    .status-sending,
+    .status-success,
+    .status-error,
+    .status-subscribed {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      gap: 8px;
+
+      p {
+        @include fluid-font($font-sm, $font-md);
+        font-family: cursive;
+      }
+    }
+  }
+}

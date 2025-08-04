@@ -1,0 +1,80 @@
+// Colors
+$color-bg: #000000;
+$color-text: #ffffff;
+
+$color-primary: #c9d6df;
+$color-accent: #f6f5f2;
+$color-secondary-accent: #eadbc8;
+$color-dark: #2e3a59;
+$color-light: #dde1e4;
+$color-highlight: #f1a39a;
+$color-success: #4ade80;
+$hamburger-red: #f02449;
+$hamburger-blue: #3c3ca3;
+$solid-color-success: #24894b;
+
+:root {
+  --color-bg: #dde1e4;
+  --color-bg2: #010305;
+  --color-text: #000000;
+  --color-accent: #2e3a59;
+  --color-border: #dde1e4;
+  --color-highlight: #f1a39a;
+  --color-sections: #c9d6df;
+}
+
+[data-theme="dark"] {
+  --color-bg: #000000;
+  --color-bg2: #2e3a59;
+  --color-text: #ffffff;
+  --color-accent: #c9d6df;
+  --color-border: #c9d6df;
+  --color-highlight: hsl(34, 45%, 85%);
+  --color-sections: #2e3a59;
+}
+
+// Typography
+$font-primary: "Poppins", sans-serif;
+$font-secondary: "Montserrat", sans-serif;
+
+// Sizing
+$container-max-width: 1200px;
+$container-max-height: 80vh;
+$padding-default: 1rem;
+$input-height: 60px;
+
+// Breakpoints
+$breakpoint-mob375: 375px;
+$breakpoint-sm576: 576px;
+$breakpoint-md768: 768px;
+$breakpoint-lg1024: 1024px;
+$breakpoint-xl1440: 1440px;
+$breakpoint-min1441: 1441px;
+
+// Font Sizes
+$font-xs: 14px;
+$font-sm: 16px;
+$font-md: 18px;
+$font-md-hi: 20px;
+$font-lg: 24px;
+$font-xl: 32px;
+$font-xxl: 40px;
+
+// clamp(max, def, min)
+// font-size: clamp(1rem, 2vw, 1.5rem);
+
+// @include respond(min1441) {
+// }
+// @include respond(xl1440) {
+// }
+// @include respond(lg1024) {
+// }
+// @include respond(md768) {
+// }
+// @include respond(sm576) {
+// }
+// @include respond(mob375) {
+// }
+
+// @include fluid-font($font-md, $font-xl);
+// @include fluid-font($font-xs, $font-md);

@@ -1,0 +1,59 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+@use 'sass:color';
+
+.slider {
+  padding: 2rem 3rem;
+  overflow: hidden;
+  height: 100%;
+  background-color: var(--color-sections);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+
+  .slider__image-wrapper {
+    width: 100%;
+  }
+
+  .slider__buttons {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 4px;
+
+    .slider__button {
+      color: $hamburger-red;
+      cursor: pointer;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem 0.25rem;
+      border-radius: 8px;
+    }
+  }
+}
+
+.slider__dots {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.slider__dot {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin: 0 0.25rem;
+  border-radius: 50%;
+  cursor: pointer;
+  background: color.adjust($hamburger-blue, $lightness: 30%);
+}
+
+.slider__dot.active {
+  background: $hamburger-blue;
+}

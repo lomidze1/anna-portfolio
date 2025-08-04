@@ -1,0 +1,140 @@
+@use "../utils/mixins" as *;
+@use "../utils/variables" as *;
+
+.input-container {
+  width: 100%;
+  height: min-content;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  .input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+
+    textarea {
+      padding-top: 1rem;
+    }
+
+    input,
+    textarea {
+      @include fluid-font($font-xs, $font-md);
+      width: 100%;
+      height: $input-height;
+      max-width: 100%;
+      color: var(--color-accent);
+      background-color: var(--color-bg);
+      border: 1px solid var(--color-accent);
+      font-size: 1rem;
+      padding-left: 3rem;
+      transition:
+        border-color 0.3s ease,
+        background-color 0.3s ease;
+
+      &::placeholder {
+        color: var(--color-accent);
+        opacity: 0.7;
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      &.input--default {
+        color: var(--color-accent);
+        background-color: var(--color-bg);
+      }
+
+      &.input--error {
+        color: $hamburger-red;
+        border-color: $hamburger-red;
+
+        &::placeholder {
+          color: $hamburger-red;
+        }
+      }
+
+      &.input--typing {
+        border-color: var(--color-accent);
+        color: var(--color-accent);
+
+        &::placeholder {
+          color: var(--color-accent);
+          opacity: 0.8;
+        }
+      }
+
+      &.input--success {
+        color: $solid-color-success;
+        border-color: $solid-color-success;
+      }
+
+      @include respond(sm576) {
+        max-width: 100%;
+      }
+    }
+
+    .input-icon {
+      position: absolute;
+      top: 50%;
+      left: 1rem;
+      transform: translateY(-50%);
+      pointer-events: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      color: var(--color-accent);
+      transition: color 0.3s ease;
+
+      &.input--error {
+        color: $hamburger-red;
+      }
+
+      &.input--typing {
+        color: var(--color-accent);
+      }
+
+      &.input--success {
+        color: $solid-color-success;
+      }
+
+      &.input--default {
+        color: var(--color-accent);
+      }
+    }
+
+    &.no-icon {
+      input,
+      textarea {
+        padding-left: 1rem;
+      }
+    }
+
+    .required {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-40%);
+      right: 1rem;
+      color: $hamburger-red;
+      font-size: 2rem;
+    }
+  }
+
+  .input-message {
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+    min-height: min-content;
+    justify-content: flex-start;
+    padding-top: 0.5rem;
+
+    p {
+      color: $hamburger-red;
+    }
+  }
+}

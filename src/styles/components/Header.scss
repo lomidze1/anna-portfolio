@@ -1,0 +1,64 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+:root {
+  --header-height: 80px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1200px;
+  height: var(--header-height);
+  align-items: center;
+  padding-inline: 32px;
+  position: relative;
+  z-index: 1000;
+
+  .header__logo button {
+    background: none;
+    border: none;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .header__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    cursor: pointer;
+    gap: 32px;
+  }
+}
+
+@include respond(md768) {
+  :root {
+    --header-height: 70px;
+  }
+
+  .header {
+    height: var(--header-height);
+    padding-inline: 16px;
+    gap: 16px;
+
+    .header__navigation {
+      gap: 16px;
+    }
+  }
+}
+
+@include respond(sm576) {
+  :root {
+    --header-height: 70px;
+  }
+  
+  .header {
+    gap: 16px;
+  }
+}

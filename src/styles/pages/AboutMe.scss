@@ -1,0 +1,57 @@
+@use "../utils/mixins" as *;
+@use "../utils/variables" as *;
+
+.container {
+  max-height: none;
+  padding: 3rem 0;
+}
+
+.about-me-container {
+  display: flex;
+  justify-content: center;
+}
+
+.about-me {
+  @include flex-center(column);
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  width: 100%;
+  max-width: 35vw;
+  gap: 5rem;
+
+  p {
+    @include fluid-font($font-sm, $font-xxl);
+  }
+}
+
+@include respond(xl1440) {
+  .about-me {
+    max-width: 45vw;
+    gap: 4rem;
+  }
+}
+@include respond(lg1024) {
+  .about-me {
+    max-width: 50vw;
+    gap: 3.5rem;
+  }
+}
+@include respond(md768) {
+  .about-me {
+    max-width: 60vw;
+    gap: 3rem;
+  }
+}
+@include respond(sm576) {
+  .about-me {
+    max-width: 70vw;
+    gap: 2.5rem;
+  }
+}
+@include respond(mob375) {
+  .about-me {
+    max-width: 85vw;
+    gap: 2rem;
+  }
+}

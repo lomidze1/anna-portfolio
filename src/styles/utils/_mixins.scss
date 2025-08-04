@@ -1,0 +1,122 @@
+@use "./variables" as *;
+@use "sass:meta";
+@use "sass:math";
+@use "sass:color";
+
+@mixin flex-center($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin container($max-width: $container-max-width) {
+  width: 100%;
+  max-width: $max-width;
+  max-height: $container-max-height;
+  margin: 0 auto;
+}
+
+@mixin dark-theme {
+  [data-theme="dark"] & {
+    @content;
+  }
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == mob375 {
+    @media (max-width: $breakpoint-mob375) {
+      @content;
+    }
+  } @else if $breakpoint == sm576 {
+    @media (max-width: $breakpoint-sm576) {
+      @content;
+    }
+  } @else if $breakpoint == md768 {
+    @media (max-width: $breakpoint-md768) {
+      @content;
+    }
+  } @else if $breakpoint == lg1024 {
+    @media (max-width: $breakpoint-lg1024) {
+      @content;
+    }
+  } @else if $breakpoint == xl1440 {
+    @media (max-width: $breakpoint-xl1440) {
+      @content;
+    }
+  } @else if ($breakpoint == min1441) {
+    @media (min-width: $breakpoint-min1441) {
+      @content;
+    }
+  }
+}
+
+@mixin font($weight: 400, $size: 1rem, $lineHeight: 1.5, $family: "Poppins") {
+  font-family: $family, sans-serif;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $lineHeight;
+}
+
+@mixin fluid-font($min-size, $max-size, $min-vw: 320, $max-vw: 1440) {
+  $min: strip-unit($min-size);
+  $max: strip-unit($max-size);
+  $diff: $max - $min;
+  $viewport-diff: $max-vw - $min-vw;
+
+  font-size: clamp(#{$min}px, calc(#{$min}px + #{$diff} * ((100vw - #{$min-vw}px) / #{$viewport-diff})), #{$max}px);
+}
+
+@function strip-unit($value) {
+  @if meta.type-of($value) == "number" and not math.is-unitless($value) {
+    @return math.div($value, ($value * 0 + 1));
+  }
+  @return $value;
+}
+
+// Main Button
+@mixin button-template(
+  $text-color: $color-text,
+  $bg-color: $color-bg,
+  $hover-lightness: 20%,
+  $border-radius: 8px,
+  $padding: 0.6rem 1.2rem
+) {
+  color: $text-color;
+  background-color: $bg-color;
+  padding: $padding;
+  border-radius: $border-radius;
+  position: relative;
+  text-decoration: none;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: color.adjust($bg-color, $lightness: $hover-lightness);
+    text-decoration: none;
+
+    @include dark-theme {
+      background-color: color.adjust($bg-color, $lightness: math.div($hover-lightness, 2));
+    }
+  }
+
+  @include dark-theme {
+    background-color: color.adjust($bg-color, $lightness: math.div($hover-lightness, 2));
+
+    &:hover {
+      background-color: color.adjust($bg-color, $lightness: $hover-lightness);
+    }
+  }
+}
+
+@mixin form-status-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50px;
+  min-height: min-content;
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "titleProductOverview": "projects.project-detail.title-product-overview",
+    "titleProductHighlights": "projects.project-detail.title-key-highlights",
+    "titleChallenge": "projects.project-detail.title-challenge",
+    "titleStrategyPlanning": "projects.project-detail.title-strategy-planning",
+    "titleSolutionImplementation": "projects.project-detail.title-solution-implementation",
+    "titleOutcomesMetrics": "projects.project-detail.title-outcomes-metrics"
+  }
+]

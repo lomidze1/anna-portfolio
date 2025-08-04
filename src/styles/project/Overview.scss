@@ -1,0 +1,35 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.projects__overview {
+  &-content {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+
+    @include respond(md768) {
+      flex-direction: column;
+    }
+  }
+
+  &-description,
+  &-video {
+    flex: 1;
+  }
+
+  &-description {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    h2 {
+      margin-bottom: auto;
+    }
+  }
+
+  .project__video-container {
+    height: 100%;
+    max-height: none;
+    aspect-ratio: auto;
+  }
+}

@@ -1,0 +1,83 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.projects {
+  width: 100%;
+}
+
+.projects__header {
+  width: 100%;
+  background-color: var(--color-sections);
+  padding: 3rem 1rem;
+
+  .projects__content {
+    @include container;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .projects__header-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+    color: var(--color-accent);
+
+    h1 {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .projects__header-navigation {
+    ul {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.5rem;
+      color: var(--color-accent);
+    }
+
+    .li {
+      list-style: decimal-leading-zero;
+      list-style-position: inside;
+      width: max-content;
+      border-bottom: 1px solid transparent;
+      font-family: cursive;
+      
+      &::marker {
+        color: $hamburger-red;
+        font-size: initial;
+      }
+
+      &:hover {
+        border-bottom: 1px solid $solid-color-success;
+      }
+
+      &:hover::marker {
+        color: $solid-color-success;
+      }
+    }
+
+    .work__nav-item--active {
+      border-bottom: 1px solid $solid-color-success;
+    }
+
+    .work__nav-item--active::marker {
+      color: $solid-color-success;
+    }
+  }
+}
+
+@include respond(md768) {
+  .projects__header {
+    padding: 3rem 2rem;
+
+    .projects__content {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+}

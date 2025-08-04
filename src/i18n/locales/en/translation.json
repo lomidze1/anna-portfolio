@@ -1,0 +1,467 @@
+{
+  "header": {
+    "name": "Anna Lomidze"
+  },
+
+  "navbar": {
+    "home": "Home",
+    "about": "About Me",
+    "work": "My Work",
+    "contact": "Contact Me"
+  },
+
+  "theme": {
+    "dark": "Dark Theme",
+    "light": "Light Theme"
+  },
+
+  "hero-welcome": {
+    "welcome-message": "Hi! Welcome to my design space!",
+    "welcome-description": "I’m a UI/UX designer passionate about solving problems in simple and elegant ways. A perfectionist by nature, I have a sharp eye for detail and a deep interest in user psychology and behavior analysis. My focus is on usability, creativity, and clear communication to craft meaningful digital experiences.",
+    "hero-quote": "Design is not just what it looks like and feels like. Design is how it works",
+    "hero-quote-writer": "— Steve Jobs"
+  },
+
+  "hero-work": {
+    "title": "Case Studies"
+  },
+
+  "projects": {
+    "tools-name": "Services and Tools",
+    "button": "View Case Study",
+    "project-not-found": "Project not found",
+
+    "project-detail": {
+      "title-product-overview": "Product Overview",
+      "title-key-highlights": "Key Highlights",
+      "title-challenge": "Understanding the problem",
+      "title-strategy-planning": "Strategy & Planning",
+      "title-solution-implementation": "Design & Implementation",
+      "title-outcomes-metrics": "Outcomes"
+    },
+
+    "biblusi": {
+      "title": "Biblusi",
+      "description": "Modern Bookstore Design",
+      "project-name": "Biblusi",
+      "problem": "Biblusi needed to increase sales through more effective promotion of discounts and special offers.",
+      "solving-block-name": "How We Solved It",
+      "solving": "We redesigned the homepage to highlight discounts, promotions, and Biblusi's wide range of products. We implemented a banner module, introduced dynamic offers, and enhanced the search functionality. UX testing showed a 25% increase in customer satisfaction.",
+      "users-block-name": "User Traffic",
+      "users-past": "≈25,000 - 80,000 monthly visitors.",
+      "users-now": "≈144,850  monthly visitors.",
+      "role-name": "Role",
+      "position": "UI/UX Designer",
+      "position-2": "Web Consultant",
+      "service1": "User Interface Design, UX Research, E-commerce Optimization",
+      "service2": "Figma, Photoshop, Adobe XD"
+    },
+
+    "kingsGarden": {
+      "title": "King's Garden",
+      "description": "Luxury Real Estate Website Design",
+      "project-name": "King's Garden",
+      "problem": "The premium-class real estate website lacked a proper digital presence, making it difficult to reflect the exclusivity of the complex and failing to engage users effectively.",
+      "solving-block-name": "Strategy & Solution",
+      "solving": "We designed a modern, visually rich website that connects with users through panoramic view systems, full-scale photo galleries, and historically inspired content. We optimized page load time and significantly improved user engagement.",
+      "users-block-name": "User Experience",
+      "users-past": "Browsing required excessive time, navigation was complicated, and the website failed to reflect the brand’s core values.",
+      "users-now": "An interactive, elegant website presents King's Garden as both a symbol of cultural heritage and a valuable investment.",
+      "role-name": "Role",
+      "position": "UI/UX Designer",
+      "position-2": "Product Concept Author",
+      "service1": "Luxury Web Design, UX Strategy, Real Estate Presentation",
+      "service2": "Figma, Adobe Photoshop, Adobe XD"
+    },
+
+    "svanidzeOlive": {
+      "title": "Svanidze Olive Oil",
+      "description": "Georgian Organic Product UI Design",
+      "project-name": "Svanidze Olive Oil",
+      "problem": "A new premium brand needed a strong digital identity and increased consumer trust in a market where olive culture is still emerging.",
+      "solving-block-name": "Branding & Digital Communication",
+      "solving": "We created a minimalist, premium-standard website and developed a brand communication strategy based on video storytelling. The video content conveyed the product’s quality, origin, and naturalness in a way that text could not. Well-structured visual elements and targeted video marketing led to a 60% increase in sales during the first months and significantly boosted customer trust.",
+      "users-block-name": "User Experience",
+      "users-past": "Customers had no awareness of the brand and were hesitant to purchase the product online.",
+      "users-now": "The brand’s video and digital platform provide a genuine experience that builds trust and supports confident purchasing decisions.",
+      "role-name": "Role",
+      "position": "Brand Architect",
+      "position-2": "Digital Designer",
+      "position-3": "UI/UX Designer",
+      "service1": "Brand Identity Design, Product Storytelling, Premium Website UI",
+      "service2": "Figma, Camtasia, Sketch"
+    },
+
+    "businessMedia": {
+      "title": "Business Media Georgia",
+      "description": "Business News Platform UI-UX Design",
+      "project-name": "Business Media Georgia",
+      "problem": "BMG needed a mobile-optimized digital platform to better engage its younger audience.",
+      "solving-block-name": "Digital Platform Transformation",
+      "solving": "The design and technical architecture were modernized, multilingual support was added, and the video experience was enhanced.",
+      "users-block-name": "User Experience",
+      "users-past": "250–350K monthly visitors (Oct–Feb), Bounce Rate ~80%.",
+      "users-now": "655K+ visitors in March, Bounce Rate reduced to ~57%, 8.6 pages per session, avg. session ~2 min.",
+      "role-name": "Role",
+      "position": "UI Designer",
+      "position-2": "Digital Strategist",
+      "position-3": "UX Consultant",
+      "service1": "Responsive Web Design, Multilingual UX Strategy, Media Platform Optimization",
+      "service2": "Figma, Adobe XD, Content Management Tools"
+    }
+  },
+
+  "projectDetails": {
+    "biblusi": {
+      "review-subtitle-01": "Biblusi is Georgia’s largest bookstore network, enhancing access to books and literacy for 15 years with over 80 branches.",
+      "review-subtitle-02": "The Biblusi Group unites diverse brands, including Pepela, XS Toys, as well as Multis and Piato.",
+      "review-subtitle-03": "In total, the group operates 125 retail locations across Georgia.",
+
+      "highlights-list-title-01": "Goals",
+      "highlights-list-title-02": "Actions",
+      "highlights-list-title-03": "Results",
+      "highlights-01-list-01": "Increase youth engagement",
+      "highlights-01-list-02": "Boost sales through discounts",
+      "highlights-01-list-03": "Showcase product diversity",
+      "highlights-01-list-04": "Promote online ordering",
+      "highlights-01-list-05": "Enhance customer loyalty",
+      "highlights-02-list-01": "Create child-friendly simple UX",
+      "highlights-02-list-02": "Dynamic placement of discount banners",
+      "highlights-02-list-03": "Generate category-based banners",
+      "highlights-02-list-04": "Simplify ordering and add financing options",
+      "highlights-02-list-05": "Introduce loyalty cards and bonuses",
+      "highlights-03-text-01": "Sensory and visual improvements keep users on the site longer with a comfortable experience.",
+      "highlights-03-text-02": "Business reached new heights: traffic and revenue steadily increased, demonstrating the effectiveness of the changes.",
+
+      "problem-01-title": "Inconsistent Navigation",
+      "problem-01-text": "Categories were not arranged in a logical sequence, so users couldn’t find books in their preferred genres and became frustrated. Many sections were buried too deeply, making it difficult to locate specific content.",
+      "problem-02-title": "Static, Non-Contextual Promo Banner",
+      "problem-02-text": "Secondary blocks drew all the attention, masking the actual promotions and core functionality. Users struggled to navigate the site, as nothing stood out as primary.",
+      "problem-03-title": "Lifeless Visual Style",
+      "problem-03-text": "The color palette and typography were outdated; visual elements felt dull and created an ambivalent mood.",
+      "problem-04-title": "Misconfigured Sliders",
+      "problem-04-text": "There were too many carousels on the homepage; nothing was presented for a one-click path to the goal. Users had to make extra clicks and spend too much time searching, which conflicts with a fast online experience.",
+      "problem-05-title": "Uncertainty and Unresponsiveness",
+      "problem-05-text": "There was no information on how to subscribe online, place an order, pay, or arrange delivery. There was no feedback channel (chat or phone), and store locations were unclear. The design wasn’t adapted for mobile.",
+
+      "main-strategy": "Our strategy centered on building a one‑click interface, dynamic promo banners, modern design elements, streamlined navigation, and a mobile‑first approach.",
+      "strategy-plan-01": "We realized we needed to create a one‑click interface, add logical categories, correct the user flow, implement auto‑suggest, and include filters so users could easily tailor content to their interests.",
+      "strategy-plan-02": "We needed to develop a dynamic promo banner where the main banner changes as needed (sales, featured book, games, promotions)—relevant to each user. We focused on emphasizing discounts and clearly highlighting categories so users wouldn’t have to think about what to do next or where to click.",
+      "strategy-plan-03": "We aimed to introduce modern, vibrant colors, strong contrasts, and contemporary typography—absolutely avoiding the outdated “dusty bookshelf” look.",
+      "strategy-plan-04": "We needed to reduce carousels and refine, sort, and simplify categories, creating a design based on a single‑click experience.",
+      "strategy-plan-05": "We needed to deliver information clearly and accessibly without being exhausting or hard to read. That’s why we adopted a mobile‑first approach and tailored the design for mobile devices.",
+      "strategy-plan-01-title": "One-Click Interface",
+      "strategy-plan-02-title": "Dynamic Banners",
+      "strategy-plan-03-title": "Vibrant Contrasts",
+      "strategy-plan-04-title": "Focused Simplicity",
+      "strategy-plan-05-title": "Mobile Focus",
+
+      "solution-implementation": "Our design team created a one‑click interface with primary categories and CTAs logically arranged. A dynamic promo‑banner system was implemented to automatically change themes based on user interests, highlighting discounts and new offers with bold colors. The design uses vibrant hues, scalable typography, and a mobile‑optimized structure, reducing page load times and improving the overall user experience.",
+
+      "label-visitors-growth": "Visitors Growth",
+      "visitors-growth": "+60%",
+      "label-sales-growth": "Sales Growth",
+      "sales-growth": "+45%",
+      "label-customer-satisfaction-growth": "Customer Satisfaction Growth",
+      "customer-satisfaction-growth": "+30%",
+      "label-bounce-rate": "Bounce Rate",
+      "bounce-rate": "-15%"
+    },
+
+    "kingsGarden": {
+      "review-subtitle-01": "King’s Garden is a premium real estate project developed by Capital Partners of Georgia (CPG).",
+      "review-subtitle-02": "The project is located in the historic core of Old Tbilisi on Mirza Shafi Street, near the entrance to the National Botanical Garden.",
+      "review-subtitle-03": "King’s Garden Residence offers unique living spaces combining panoramic views, luxurious design, and an urban context.",
+
+      "highlights-list-title-01": "Goals",
+      "highlights-list-title-02": "Actions",
+      "highlights-list-title-03": "Results",
+
+      "highlights-01-list-01": "Preserve and showcase historical value",
+      "highlights-01-list-02": "Integrate panoramic views",
+      "highlights-01-list-03": "Create a visually rich design",
+      "highlights-01-list-04": "Add high‑quality photo galleries",
+      "highlights-01-list-05": "Emphasize the brand’s luxury",
+
+      "highlights-02-list-01": "Optimize UX and page load times",
+      "highlights-02-list-02": "Implement interactive content and visuals",
+      "highlights-02-list-03": "Integrate historical and cultural context",
+      "highlights-02-list-04": "Position predictive CTA buttons and contact forms",
+      "highlights-02-list-05": "Harmonize desktop and mobile experiences",
+
+      "highlights-03-text-01": "User engagement increased thanks to a comfortable, visually rich interface.",
+      "highlights-03-text-02": "The project effectively drove interest, boosting conversions and user count.",
+
+      "problem-01-title": "Lack of digital identity",
+      "problem-01-text": "The site lacked a modern, premium identity, making it difficult to convey the project’s prestige and hindering user engagement.",
+
+      "problem-02-title": "Insufficient authentic visual content",
+      "problem-02-text": "The website did not feature enough panoramic views and high‑resolution photo galleries to accurately represent the project’s uniqueness.",
+
+      "problem-03-title": "Navigation and search difficulties",
+      "problem-03-text": "Users struggled to find project details, degrading the overall user experience.",
+
+      "problem-04-title": "Lack of mobile responsiveness",
+      "problem-04-text": "The site was not fully adapted for mobile devices, preventing mobile visitors from accessing all content and features.",
+
+      "problem-05-title": "Slow page loads due to heavy media elements",
+      "problem-05-text": "Overloaded media elements slowed down page loads, negatively impacting user interaction.",
+
+      "main-strategy": "Our strategy was based on emphasizing King’s Garden’s historical and cultural heritage, integrating panoramic views, adding high‑quality photo galleries, and optimizing the interface for both desktop and mobile devices.",
+      "strategy-plan-01-title": "Historical Context",
+      "strategy-plan-01": "We should highlight the project's location in the historical core of Old Tbilisi to underscore the environment’s uniqueness and cultural value.",
+      "strategy-plan-02-title": "Panoramic Views",
+      "strategy-plan-02": "Integrate a system of panoramic views that allows visitors to fully explore the complex’s territory.",
+      "strategy-plan-03-title": "Photo Galleries",
+      "strategy-plan-03": "Add high‑quality photo galleries and a video tour to provide visitors with an elite residential visual experience.",
+      "strategy-plan-04-title": "Performance",
+      "strategy-plan-04": "Optimize page load times and SEO to improve user engagement and conversion metrics.",
+      "strategy-plan-05-title": "Mobile Harmony",
+      "strategy-plan-05": "Implement full mobile adaptation and a simplified interface so that users enjoy a seamless experience on any device.",
+      "solution-implementation": "Our design team created a modern, visually rich interface that logically integrates panoramic views, high‑resolution photo galleries, and the historical and cultural context. We optimized page load times and the UX flow to increase user engagement and reinforce the brand’s premium image.",
+
+      "label-visitors-growth": "Visitors growth",
+      "visitors-growth": "+35%",
+
+      "label-sales-growth": "Sales growth",
+      "sales-growth": "+20%",
+
+      "label-customer-satisfaction-growth": "Customer satisfaction growth",
+      "customer-satisfaction-growth": "+40%",
+
+      "label-bounce-rate": "Bounce rate",
+      "bounce-rate": "-10%"
+    },
+
+    "svanidzeOlive": {
+      "review-subtitle-01": "Svanidze Olive is a premium-class Georgian organic brand that has been cultivating olive culture since 2009, with over 1,500 hectares of plantations in Kakheti.",
+      "review-subtitle-02": "The brand is a member of the International Olive Council and holds ISO 22000 certification, ensuring the highest standards of quality and food safety.",
+      "review-subtitle-03": "As the first modern processing facility in the region, it contributes to the development of the local economy and positions Georgia on the global olive industry map.",
+
+      "highlights-list-title-01": "Goals",
+      "highlights-list-title-02": "Actions",
+      "highlights-list-title-03": "Outcomes",
+
+      "highlights-01-list-01": "Creating the brand’s digital identity in the Georgian market",
+      "highlights-01-list-02": "Emphasizing premium quality and naturalness",
+      "highlights-01-list-03": "Increasing customer trust",
+      "highlights-01-list-04": "Introducing communication based on video narrative",
+      "highlights-01-list-05": "Ensuring initial growth in sales",
+      "highlights-02-list-01": "Creating a minimalist and premium website design",
+      "highlights-02-list-02": "Video communication of the brand’s origin and values",
+      "highlights-02-list-03": "Integrating properly arranged visual elements",
+      "highlights-02-list-04": "Video presentation of naturalness and quality",
+      "highlights-02-list-05": "Strategic implementation of UI/UX design for user trust",
+      "highlights-03-text-01": "Customer trust increased significantly as a result of the strategy based on visual communication and video narrative.",
+      "highlights-03-text-02": "Sales increased by 60% in the very first month, indicating the effectiveness of the strategy and a strong digital identity.",
+
+      "problem-01-title": "Lack of digital identity",
+      "problem-01-text": "The website lacked a modern, elite identity, which made it difficult to present the project's prestige and hindered user engagement.",
+      "problem-02-title": "Lack of authentic visual content",
+      "problem-02-text": "The website did not include sufficient panoramic views and high-resolution photo galleries, which made it hard to accurately showcase the project's uniqueness.",
+      "problem-03-title": "Difficulties with search and navigation",
+      "problem-03-text": "Users had trouble finding project details, which negatively affected the overall user experience.",
+      "problem-04-title": "Lack of mobile responsiveness",
+      "problem-04-text": "The website was not fully adapted for mobile devices, which prevented mobile visitors from accessing all content and functionality.",
+      "problem-05-title": "Slow-loading pages due to overloaded media elements",
+      "problem-05-text": "The page loading speed was very slow, which negatively impacted user interaction.",
+
+      "main-strategy": "Our strategy was based on creating a strong emotional connection with a premium-quality natural product, supported by branding through video narrative, a visually elegant website, and building customer trust through a modern digital experience.",
+
+      "strategy-plan-01": "We needed to create an elegant, minimalist design for the brand that would emphasize its Georgian natural origin, purity, and organic nature. The design had to evoke associations with quality and exclusivity from the very first glance.",
+      "strategy-plan-02": "According to the plan, it was necessary to base the brand’s communication on a video narrative that would emotionally connect the audience with the product’s origin and values. This was to serve as a stronger alternative to text-based communication to build trust.",
+      "strategy-plan-03": "We aimed to enrich the visual content — with high-resolution photos, videos, and design elements that would create a sensory experience and instantly convey the product’s value.",
+      "strategy-plan-04": "Our goal was to develop an information architecture that would be easy for users to understand — the structure had to be transparent, logical, and equally comfortable for both first-time and returning visitors.",
+      "strategy-plan-05": "It was important to design a fully responsive UX that would retain its elegance on mobile devices and ensure a smooth, intuitive navigation experience.",
+
+      "strategy-plan-01-title": "Minimalist Premium Design",
+      "strategy-plan-02-title": "Video Narrative as the Core of Communication",
+      "strategy-plan-03-title": "Enriched Visual Elements",
+      "strategy-plan-04-title": "Simple Information Perception",
+      "strategy-plan-05-title": "Mobile-Oriented UX",
+
+      "solution-implementation": "Our designers and brand architects developed an elegant and minimalist web interface that reflects the product’s organic nature, Georgian origin, and premium quality. The interface features high-resolution photos and a video narrative that creates an emotional connection with the user. A natural color palette, simplified navigation, and mobile-adapted design were chosen, significantly enhancing customer trust, engagement, and conversion rate.",
+
+      "label-visitors-growth": "Visitor Growth",
+      "visitors-growth": "+55%",
+      "label-sales-growth": "Sales Growth",
+      "sales-growth": "+40%",
+      "label-customer-satisfaction-growth": "Customer Satisfaction Growth",
+      "customer-satisfaction-growth": "+50%",
+      "label-bounce-rate": "Bounce Rate",
+      "bounce-rate": "-18%"
+    },
+
+    "businessMedia": {
+      "review-subtitle-01": "Business Media Georgia is an innovative digital platform that provides transparent and objective business news and analytics.",
+      "review-subtitle-02": "The platform supports a multilingual interface and is focused on content tailored to diverse audiences.",
+      "review-subtitle-03": "Following the recent design update, monthly visits climbed to over 655K, the bounce rate dropped by about 57%, and an average of 8.6 pages were viewed per session.",
+
+      "highlights-list-title-01": "Goals",
+      "highlights-list-title-02": "Actions",
+      "highlights-list-title-03": "Results",
+
+      "highlights-01-list-01": "Rapid, high-quality delivery of business news to audiences of all profiles.",
+      "highlights-01-list-02": "Seamless integration of multimedia channels (BMGTV, TV Pirveli).",
+      "highlights-01-list-03": "Capability to distribute multilingual content (Georgian, English, Turkish, Russian).",
+      "highlights-01-list-04": "Increase in engagement and viewership among younger audiences.",
+      "highlights-01-list-05": "Ensured continuous growth in monthly visits and broadcast metrics.",
+      "highlights-02-list-01": "Complete modernization of the website’s UI/UX design and architecture.",
+      "highlights-02-list-02": "Integration of video programming and optimization of streaming on BMGTV and TV Pirveli.",
+      "highlights-02-list-03": "Systematic analysis of user feedback and implementation of continuous improvement cycles.",
+      "highlights-03-text-01": "Monthly visits rose to 655K and the bounce rate dropped by ~57%.",
+      "highlights-03-text-02": "Average session length grew to 9 pages and exceeded 2 minutes.",
+
+      "problem-01-title": "Unstructured News",
+      "problem-01-text": "News was not organized into thematic categories, making it difficult for the audience to quickly find targeted information.",
+      "problem-02-title": "Lack of Financial Indicators",
+      "problem-02-text": "The platform did not display real-time crypto and stock price indicators, hindering effective investment analysis.",
+      "problem-03-title": "Low Youth Engagement",
+      "problem-03-text": "Hour-long broadcasts were perceived as tiring by young viewers, resulting in low engagement rates.",
+      "problem-04-title": "Textual Information Overload",
+      "problem-04-text": "Large blocks of text made information hard to digest and scattered attention, creating obstacles to rapid information delivery.",
+      "main-strategy": "Our strategy was based on organizing news into thematic categories, integrating real-time financial tickers, using short video formats to engage younger audiences, implementing a card-based interface for quick information access, and overhauling the core structure.",
+
+      "strategy-plan-01-title": "Thematic Categories",
+      "strategy-plan-02-title": "Financial Tickers",
+      "strategy-plan-03-title": "Micro Video Format",
+      "strategy-plan-04-title": "Card Interface",
+      "strategy-plan-05-title": "Performance Optimization",
+      "strategy-plan-01": "Create a category-driven interface that allows users to easily refine and find the news most relevant to them.",
+      "strategy-plan-02": "Plan to display real-time crypto and stock price tickers upfront so investors can access comprehensive financial data in one place.",
+      "strategy-plan-03": "Develop a series of short 1–2 minute video clips that succinctly present the day’s top stories and boost engagement among younger audiences.",
+      "strategy-plan-04": "Design a card-based layout where each card combines a headline, visual element, and brief description, ensuring fast and intuitive information access.",
+      "strategy-plan-05": "Optimize pages and media content for load times, SEO, and mobile responsiveness to deliver a seamless and speedy user experience.",
+
+      "solution-implementation": "Our design and development team launched a one-click, category-based navigation, integrated real-time crypto and stock price tickers, created short 1–2 minute video segments to boost youth engagement, implemented a card-based UI for each news item, and fully optimized page SEO, performance, and mobile responsiveness to deliver information quickly and seamlessly.",
+
+      "label-visitors-growth": "Visitors Growth",
+      "visitors-growth": "655K+ (+87%)",
+      "label-sales-growth": "Advertising Revenue Growth",
+      "sales-growth": "+25%",
+      "label-customer-satisfaction-growth": "Customer Satisfaction",
+      "customer-satisfaction-growth": "4.5/5 (+30%)",
+      "label-bounce-rate": "Bounce Rate",
+      "bounce-rate": "-27%"
+    }
+  },
+
+  "aboutMe": {
+    "p1": "As a UI/UX designer from Georgia with a background in fine arts, I craft minimal, user-centered digital products with a focus on simplicity and clarity.",
+    "p2": "Ever since childhood, I’ve been passionate about drawing and design, which led me to graduate from the Tbilisi State Academy of Arts.",
+    "p3": "Later, I deepened my knowledge of digital design by completing a course at Smart Academy - a turning point that brought me closer to the digital world.",
+    "p4": "My husband played a big role in inspiring me to pursue this path professionally. With his support, I discovered my passion for designing intuitive and aesthetically pleasing digital experiences.",
+    "p5": "Over time, my focus shifted fully to UI/UX design - creating websites, digital products, and user experiences that are not only functional but truly serve user needs.",
+    "p6": "I’ve worked with both startups and international companies — as a solo designer and within teams — on redesigns, poster design, and end-to-end product creation from scratch.",
+    "p7": "A minimalist at heart, I believe good design should feel effortless, purposeful, and meaningful.",
+    "p8": "When I’m not designing, I enjoy reading, hiking in nature, and spending time with my husband and our two sons — the ones who bring the most color into my life."
+  },
+
+  "footer": {
+    "download-resume": "Download CV",
+    "subscribe": "subscribe",
+    "UI-Kits": "UI Kits For Sale",
+    "magazine": "My Shop",
+    "blog": "Blog",
+    "copyright": "2023 Anna - UI/UX Design Portfolio. ",
+    "reserve": "All rights reserved."
+  },
+
+  "contact-page": {
+    "contact-me": "Let’s Talk",
+    "subscribe-me": "Join the List",
+    "feedback-to-me": "Share Feedback"
+  },
+
+  "contact-us": {
+    "title": "Fill out the contact form and I will get back to you shortly."
+  },
+
+  "subscribe": {
+    "title": "Subscribe to UI/UX designer updates from Georgia.",
+    "hover_on_input": "Subscribe for discounts, updates, and UI resources",
+    "alert_message": "You are already subscribed.",
+    "thanks_message": "Thank you for subscribing! You’ll soon receive my helpful design updates."
+  },
+
+  "feedback": {
+    "title": "Tell us how your experience was."
+  },
+
+  "input": {
+    "placeholder": {
+      "name": "Name",
+      "email": "Email",
+      "company": "Company",
+      "companyWebsite": "Company Website",
+      "message": "Message",
+      "feedback": "Share your thoughts or suggestions..."
+    },
+
+    "title": {
+      "default": "Please fill out this field correctly.",
+      "name": "Enter your name",
+      "email": "Enter a valid email address",
+      "company": "Enter your company or organization name",
+      "companyWebsite": "Enter your company website URL (with http or https)",
+      "message": "Type your message or project inquiry here",
+      "feedback": "We value your opinion"
+    },
+
+    "validation": {
+      "name": "Name must be at least 2 characters long.",
+      "email": "Please enter a valid email address.",
+      "company": "Company name must be at least 2 characters long.",
+      "companyWebsite": "Please enter a valid website URL (starting with http or https).",
+      "message": "Message must contain at least 3 characters.",
+      "feedback": "Feedback must contain at least 3 characters.",
+
+      "default": {
+        "required": "Please fill out this field.",
+        "text": "Please enter valid text with at least 2 characters.",
+        "email": "Please enter a valid email address.",
+        "number": "Please enter a valid number.",
+        "url": "Please enter a valid URL.",
+        "textarea": "Please enter at least 3 characters.",
+        "password": "Password does not meet minimum requirements."
+      }
+    }
+  },
+
+  "form": {
+    "buttons": {
+      "submit": "Send",
+      "subscribe": "Get Updates",
+
+      "title": {
+        "default": "Please click the button",
+        "submit": "Click to submit the form",
+        "subscribe": "Subscribe for updates and resources"
+      }
+    },
+
+    "status": {
+      "sending": "Sending, please wait...",
+      "success": "Your message was sent successfully! Thank you for reaching out.",
+      "error": "Failed to send. Please try again later or contact us via social media.",
+      "tooManyRequests": "You’ve exceeded the request limit. Please try again later.",
+      "already-subscribed": "You are already subscribed.",
+      "success-subscribe": "You have successfully subscribed to the mailing list! Thank you."
+    }
+  },
+
+  "projects_header": {
+    "title": "Projects and Solutions",
+    "sub-title-1": "Explore real-world problems.",
+    "sub-title-2": "Reflect on specific outcomes.",
+    "sub-title-3": "Focus on solutions and design.",
+    "click_to_watch": "Click To See The Video"
+  },
+
+  "404": {
+    "return-home": "Return Home",
+    "go-back": "Go Back",
+    "title": "Sorry, page not found",
+    "subtitle": "The page you are looking for may have been moved or removed."
+  }
+}

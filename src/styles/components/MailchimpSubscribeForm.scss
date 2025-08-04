@@ -1,0 +1,30 @@
+@use "../utils/mixins" as *;
+@use "../utils/variables" as *;
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+
+  .title {
+    @include fluid-font($font-xs, $font-md);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .input-container {
+    margin-bottom: 1rem;
+  }
+
+  .form-status-container .form-status-message {
+    margin-bottom: 1rem;
+  }
+
+  .subscribe-form__button {
+    @include button-template($border-radius: 0);
+    @include fluid-font($font-md, $font-lg);
+  }
+}

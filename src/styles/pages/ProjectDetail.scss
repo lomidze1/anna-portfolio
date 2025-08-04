@@ -1,0 +1,52 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.projects__item {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-top: 3rem;
+
+  .section {
+    padding-inline: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &--full {
+      background-color: var(--color-sections);
+      padding-top: 2rem;
+      padding-bottom: 3rem;
+    }
+
+    &__title {
+      color: var(--color-accent);
+      font-family: cursive;
+      line-height: normal;
+
+      span {
+        color: $hamburger-red;
+      }
+    }
+
+    &__subtitle {
+      padding-right: 1rem;
+      width: max-content;
+      border-bottom: 3px solid var(--color-text);
+      padding-bottom: 0.2rem;
+    }
+
+    .projects__container {
+      width: 100%;
+      max-width: $container-max-width;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    @include respond(sm576) {
+      padding-inline: 1rem;
+    }
+  }
+}

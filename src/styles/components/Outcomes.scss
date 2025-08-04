@@ -1,0 +1,77 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+// src/styles/project/Outcomes.scss
+
+.projects__outcomes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.outcome--card {
+  background: lightsteelblue;
+  position: relative;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+  gap: 2rem;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .outcome__images {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+    .outcome__theme-icon {
+      width: 3rem;
+      height: 3rem;
+      object-fit: contain;
+    }
+
+    .outcome__arrow-icon {
+      width: 2rem;
+      height: 2rem;
+      object-fit: contain;
+      color: inherit;
+    }
+  }
+
+  .outcome__info {
+    .outcome__value {
+      color: var(--color-text);
+    }
+
+    .outcome__label {
+      color: var(--color-text);
+    }
+
+    /* Positive / Negative accent for number and arrow */
+    &.positive {
+      .outcome__value,
+      .outcome__arrow-icon {
+        color: var(--color-success);
+      }
+    }
+
+    &.negative {
+      .outcome__value,
+      .outcome__arrow-icon {
+        color: var(--hamburger-red);
+      }
+    }
+  }
+}

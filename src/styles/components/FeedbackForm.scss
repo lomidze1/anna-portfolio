@@ -1,0 +1,22 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  gap: 1.5rem;
+
+  .title {
+    @include fluid-font($font-xs, $font-md);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    text-align: center;
+  }
+
+  &__button {
+    @include button-template($border-radius: 0);
+    @include fluid-font($font-md, $font-lg);
+  }
+}
