@@ -17,6 +17,7 @@ const Home = () => {
             src={'/images/profile.png'}
             alt='Profile Image off Anna'
             className='profileImage'
+            loading='lazy'
             width={300}
             height={300}
           />
