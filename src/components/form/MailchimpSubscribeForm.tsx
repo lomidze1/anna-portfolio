@@ -25,13 +25,16 @@ type RenderProps = {
 const checkSubscriber = async (
   email: string
 ): Promise<'subscribed' | 'not_subscribed' | 'pending' | 'error'> => {
-  const response = await fetch('http://localhost:4000/check-subscriber', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ email }),
-  });
+  const response = await fetch(
+    `${import.meta.env.VITE_API_BASE_URL}/check-subscriber`,
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ email }),
+    }
+  );
 
   const result = await response.json();
   return result.status || 'error';
