@@ -8,9 +8,9 @@ app.use(cors());
 app.use(express.json());
 
 const PORT = process.env.PORT || 4000;
-const MAILCHIMP_API_KEY = '047062b39b6cca8d5f692b8faa8ae4ec-us7'; // 🔒 Replace with your real API key
-const LIST_ID = 'd13694cdf0';
-const DATACENTER = 'us7'; // From your API key or endpoint
+const MAILCHIMP_API_KEY = process.env.MAILCHIMP_API_KEY;
+const LIST_ID = process.env.LIST_ID;
+const DATACENTER = process.env.DATACENTER;
 
 app.post('/check-subscriber', async (req, res) => {
   const { email } = req.body;
