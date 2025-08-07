@@ -80,7 +80,7 @@ const Footer = () => {
 
         <div className='footer__navbar navbar '>
           <ul className='navbar__menu-items'>
-            {/* უნდა დავამაყო ლინკები რეალურ ვებსაიტებზე */}
+
             <li>
               <a href='/magazine'>{t('footer.magazine')}</a>
             </li>
