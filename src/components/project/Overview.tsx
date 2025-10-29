@@ -23,7 +23,10 @@ const common: CommonDetails = (commonDetails as CommonDetails[])[0];
 const Overview: React.FC<OverviewProps> = ({ project }) => {
   const { t, i18n } = useTranslation();
   const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
-  const videoPath = `/videos/screen/${project.id}.mp4`;
+  const videoPath =
+    project.id === 'softintermob'
+      ? `/videos/${project.id}.mp4`
+      : `/videos/screen/${project.id}.mp4`;
 
   return (
     <section className='projects__overview section section--half'>

@@ -1,0 +1,168 @@
+{
+  "ios": {
+    "viewAllPath": "/ios-projects",
+    "items": [
+      {
+        "id": "gta",
+        "titleKey": "GTA",
+        "coverImage": "/images/additional-works/ios/gta/cover.jpg",
+        "figmaLink": "https://www.figma.com/design/9lBQLwaYwf5e1Df5kBrSVK/Main---GTA?node-id=0-1&t=UdPPYIkO1gSNX7YR-1",
+        "gallery": [
+          "/images/additional-works/ios/gta/UI-KIT.png",
+          "/images/additional-works/ios/gta/01-Loading.png",
+          "/images/additional-works/ios/gta/02-Profile.png",
+          "/images/additional-works/ios/gta/03-Home.png",
+          "/images/additional-works/ios/gta/04-Maps.png",
+          "/images/additional-works/ios/gta/05-Characters.png",
+          "/images/additional-works/ios/gta/06-Edit.png",
+          "/images/additional-works/ios/gta/07-Cheats.png",
+          "/images/additional-works/ios/gta/08-Reels.png",
+          "/images/additional-works/ios/gta/09-Rewards.png",
+          "/images/additional-works/ios/gta/10-Buy.png"
+        ]
+      },
+      {
+        "id": "melon",
+        "titleKey": "Melon",
+        "coverImage": "/images/additional-works/ios/melon/Cover.png",
+        "figmaLink": "https://www.figma.com/design/Co4mQ88eya8qEZDPwS4Wbm/iOS---Mods-for-Melon-Playground--OUT-REF--9---Re-Design--Copy-?node-id=3802-2899&t=Nn9sBuLf7LQGYI84-1",
+        "gallery": [
+          "/images/additional-works/ios/melon/UI-kit.png",
+          "/images/additional-works/ios/melon/01-Loading.png",
+          "/images/additional-works/ios/melon/02-Menu.png",
+          "/images/additional-works/ios/melon/03-Mods.png",
+          "/images/additional-works/ios/melon/04-Editor.png",
+          "/images/additional-works/ios/melon/05-My-works.png",
+          "/images/additional-works/ios/melon/06-Favorites.png",
+          "/images/additional-works/ios/melon/07-Skins.png",
+          "/images/additional-works/ios/melon/08-Materials.png",
+          "/images/additional-works/ios/melon/09-Settings.png"
+        ]
+      },
+      {
+        "id": "gorilla-tag",
+        "titleKey": "Gorilla Tag",
+        "coverImage": "/images/additional-works/ios/gorilla-tag/cover.png",
+        "figmaLink": "https://www.figma.com/design/p8G4OXfwRzHeA27xDozPwJ/iOS---Mods-for-Gorilla-Tag--old-Gacha---REF--70---Re-Design--Copy-?node-id=0-1&t=VYXInrDMeQ6mmMJP-1",
+        "gallery": [
+          "/images/additional-works/ios/gorilla-tag/UI-KIT.png",
+          "/images/additional-works/ios/gorilla-tag/01-Intro.png",
+          "/images/additional-works/ios/gorilla-tag/02-Menu.png",
+          "/images/additional-works/ios/gorilla-tag/03-Loading.png",
+          "/images/additional-works/ios/gorilla-tag/04-Mods.png",
+          "/images/additional-works/ios/gorilla-tag/05-Cheats.png",
+          "/images/additional-works/ios/gorilla-tag/06-Skins.png",
+          "/images/additional-works/ios/gorilla-tag/07-Editor.png"
+        ]
+      }
+    ]
+  },
+  "ipad": {
+    "viewAllPath": "/ipad-projects",
+    "items": [
+      {
+        "id": "gta",
+        "titleKey": "GTA",
+        "coverImage": "/images/additional-works/ipad/gta/cover.png",
+        "figmaLink": "https://www.figma.com/design/9lBQLwaYwf5e1Df5kBrSVK/Main---GTA?node-id=4247-1915&t=UdPPYIkO1gSNX7YR-1",
+        "gallery": [
+          "/images/additional-works/ipad/gta/01-Loading.png",
+          "/images/additional-works/ipad/gta/02-Rewards.png",
+          "/images/additional-works/ipad/gta/03-Profile.png",
+          "/images/additional-works/ipad/gta/04-Home.png",
+          "/images/additional-works/ipad/gta/05-Maps.png",
+          "/images/additional-works/ipad/gta/06-Characters.png",
+          "/images/additional-works/ipad/gta/07-Edit.png",
+          "/images/additional-works/ipad/gta/08-Cheats.png",
+          "/images/additional-works/ipad/gta/09-Reels.png",
+          "/images/additional-works/ipad/gta/10-Rewards.png",
+          "/images/additional-works/ipad/gta/11-Buy.png"
+        ]
+      },
+      {
+        "id": "melon",
+        "titleKey": "Melon",
+        "coverImage": "/images/additional-works/ipad/melon/cover.png",
+        "figmaLink": "https://www.figma.com/design/Co4mQ88eya8qEZDPwS4Wbm/iOS---Mods-for-Melon-Playground--OUT-REF--9---Re-Design--Copy-?node-id=3802-2900&p=f&t=nfPIEbK4eOhvKQ2I-0",
+        "gallery": [
+          "/images/additional-works/ipad/melon/01-Loading.png",
+          "/images/additional-works/ipad/melon/02-Menu.png",
+          "/images/additional-works/ipad/melon/03-Mods.png",
+          "/images/additional-works/ipad/melon/04-Editor.png",
+          "/images/additional-works/ipad/melon/05-My-works.png",
+          "/images/additional-works/ipad/melon/06-Favorites.png",
+          "/images/additional-works/ipad/melon/07-Skins.png",
+          "/images/additional-works/ipad/melon/08-Materials.png",
+          "/images/additional-works/ipad/melon/09-Settings.png"
+        ]
+      },
+      {
+        "id": "gorilla-tag",
+        "titleKey": "Gorilla Tag",
+        "figmaLink": "https://www.figma.com/design/p8G4OXfwRzHeA27xDozPwJ/iOS---Mods-for-Gorilla-Tag--old-Gacha---REF--70---Re-Design--Copy-?node-id=15953-1521&p=f&t=ruWLKii9Z4Kh7yLg-0",
+        "coverImage": "/images/additional-works/ipad/gorilla-tag/cover.png",
+        "gallery": ["/images/additional-works/ipad/gorilla-tag/Gorilla-Tag.png"]
+      }
+    ]
+  },
+  "graphic": {
+    "viewAllPath": "/graphic-projects",
+    "items": [
+      {
+        "id": "gta",
+        "titleKey": "GTA",
+        "coverImage": "/images/additional-works/graphic/gta/cover.png",
+        "figmaLink": "https://www.figma.com/design/9lBQLwaYwf5e1Df5kBrSVK/Main---GTA?node-id=10023-13283&t=UdPPYIkO1gSNX7YR-1",
+        "gallery": [
+          "/images/additional-works/graphic/gta/01-Graphic.png",
+          "/images/additional-works/graphic/gta/02-Graphic.png"
+        ]
+      },
+      {
+        "id": "melon",
+        "titleKey": "Melon",
+        "figmaLink": "https://www.figma.com/design/Co4mQ88eya8qEZDPwS4Wbm/iOS---Mods-for-Melon-Playground--OUT-REF--9---Re-Design--Copy-?node-id=4329-4905&p=f&t=nfPIEbK4eOhvKQ2I-0",
+        "coverImage": "/images/additional-works/graphic/melon/cover.png",
+        "gallery": [
+          "/images/additional-works/graphic/melon/01-Graphic.png",
+          "/images/additional-works/graphic/melon/02-Graphic.png"
+        ]
+      }
+    ]
+  },
+  "test": {
+    "viewAllPath": "/test-works",
+    "items": [
+      {
+        "id": "prototype-hud",
+        "titleKey": "softintermob.items.prototype-hud.title",
+        "coverImage": "/images/additional-works/test/prototype-hud/cover.png",
+        "gallery": [
+          "/images/additional-works/test/prototype-hud/concept-01.png",
+          "/images/additional-works/test/prototype-hud/concept-02.png",
+          "/images/additional-works/test/prototype-hud/concept-03.png"
+        ]
+      },
+      {
+        "id": "gesture-lab",
+        "titleKey": "softintermob.items.gesture-lab.title",
+        "coverImage": "/images/additional-works/test/gesture-lab/cover.png",
+        "gallery": [
+          "/images/additional-works/test/gesture-lab/concept-01.png",
+          "/images/additional-works/test/gesture-lab/concept-02.png",
+          "/images/additional-works/test/gesture-lab/concept-03.png"
+        ]
+      },
+      {
+        "id": "color-experiments",
+        "titleKey": "softintermob.items.color-experiments.title",
+        "coverImage": "/images/additional-works/test/color-experiments/cover.png",
+        "gallery": [
+          "/images/additional-works/test/color-experiments/concept-01.png",
+          "/images/additional-works/test/color-experiments/concept-02.png",
+          "/images/additional-works/test/color-experiments/concept-03.png"
+        ]
+      }
+    ]
+  }
+}

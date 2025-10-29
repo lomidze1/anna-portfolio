@@ -26,6 +26,24 @@
     "title": "Case Studies"
   },
 
+  "additional-work": {
+    "title": "Works",
+    "ios-title": "iOS Works",
+    "ios-description": "Mobile game interfaces and flows crafted for iOS experiences.",
+    "ios-image": "/images/ios-projects.svg",
+    "ipad-title": "iPad Games",
+    "ipad-description": "Large-screen gameplay UI designed for iPad sessions.",
+    "ipad-image": "/images/ipad-projects.svg",
+    "graphic-title": "Graphic Art",
+    "graphic-description": "Key art, promo layouts, and brand illustrations.",
+    "graphic-image": "/images/graphic-projects.svg",
+    "test-title": "Test Works",
+    "test-description": "Concept explorations and experimental design studies.",
+    "test-image": "/images/test-works.svg",
+    "figma-description": "To explore the full project in detail, please visit Figma.",
+    "figma-button": "Open in Figma"
+  },
+
   "projects": {
     "tools-name": "Services and Tools",
     "button": "View Case Study",
@@ -108,10 +126,58 @@
       "position-3": "UX Consultant",
       "service1": "Responsive Web Design, Multilingual UX Strategy, Media Platform Optimization",
       "service2": "Figma, Adobe XD, Content Management Tools"
+    },
+
+    "softintermob": {
+      "title": "Softintermob",
+      "project-name": "Softintermob",
+      "year": "05/2025 - Present",
+      "description": "Cross-platform design of mobile apps and games for iOS and Android.",
+      "problem": "Softintermob needed an iOS designer with deep experience in mobile game UI and interaction design.",
+      "solving-block-name": "How we helped",
+      "solving": "We delivered an iOS-first UI concept for the studio’s games: designed HUD layouts, ergonomic controls, clear menus, and intuitive in-game guidance. We emphasized readable contrast ratios, memorable gameplay visuals, and purposeful microinteractions to increase player engagement.",
+      "users-block-name": "Player experience",
+      "users-past": "Players struggled to navigate menus and controls, slowing the pace and reducing engagement.",
+      "users-now": "The refined UI and tuned microinteractions increase engagement and provide a smoother first-session experience.",
+      "role-name": "My role",
+      "position": "iOS Designer",
+      "position-2": "Graphic & Game Designer",
+      "position-3": "UI/UX Designer",
+      "service1": "UI design, HUD design, user-flow mapping, interaction design, prototyping",
+      "service2": "Design systems, visual assets, gameplay animations, usability audits, mobile UX research",
+      "sections": {
+        "ios": "iPhone games",
+        "ipad": "iPad games",
+        "graphic": "Graphic art",
+        "view-all": "View all"
+      },
+      "items": {
+        "melon": { "title": "Melon Quest" },
+        "gta": { "title": "GTA Mobile Deck" },
+        "gorilla-tag": { "title": "Gorilla Tag UI" },
+        "neon-blitz": { "title": "Neon Blitz" },
+        "melon-hd": { "title": "Melon HD" },
+        "gta-heist": { "title": "GTA Heist Board" },
+        "gorilla-expedition": { "title": "Gorilla Expedition" },
+        "stellar-bloom": { "title": "Stellar Bloom" },
+        "melon-poster": { "title": "Melon Poster Series" },
+        "gta-keyart": { "title": "GTA Key Art" },
+        "gorilla-poster": { "title": "Gorilla Tag Poster" },
+        "hud-blueprint": { "title": "HUD Blueprint" },
+        "badge-collection": { "title": "Badge Collection" },
+        "prototype-hud": { "title": "Prototype HUD" },
+        "gesture-lab": { "title": "Gesture Lab" },
+        "color-experiments": { "title": "Color Experiments" }
+      }
     }
   },
 
   "projectDetails": {
+    "softintermob": {
+      "review-subtitle-01": "Softintermob is a mobile games studio shaping fast-paced casual, arcade, and adventure titles for iPhone, iPad, and Apple TV.",
+      "review-subtitle-02": "We shaped the interface around fast-action readability, expressive branding, and steady content drops without breaking the game flow.",
+      "review-subtitle-03": "We delivered a modular interface system that scales across HUDs, menus, overlays, and promotional graphics."
+    },
     "biblusi": {
       "review-subtitle-01": "Biblusi is Georgia’s largest bookstore network, enhancing access to books and literacy for 15 years with over 80 branches.",
       "review-subtitle-02": "The Biblusi Group unites diverse brands, including Pepela, XS Toys, as well as Multis and Piato.",

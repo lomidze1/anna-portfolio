@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="graphicGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff8800"/>
+      <stop offset="100%" stop-color="#ff3c7d"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#graphicGradient)"/>
+  <g fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="8">
+    <path d="M200 140h160l40 60-40 60H200l-40-60z" />
+    <path d="M520 340h80l40 60-40 60h-80l-40-60z" />
+    <circle cx="560" cy="160" r="82"/>
+  </g>
+  <text x="60" y="430" fill="#ffffff" font-family="Helvetica, Arial, sans-serif" font-size="54" font-weight="600">Graphic Works</text>
+  <text x="60" y="472" fill="rgba(255,255,255,0.75)" font-family="Helvetica, Arial, sans-serif" font-size="30">Visual identity &amp; promo design studies</text>
+</svg>

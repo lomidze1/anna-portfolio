@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="ipadGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6a11cb"/>
+      <stop offset="100%" stop-color="#2575fc"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#ipadGradient)"/>
+  <rect x="160" y="80" width="480" height="320" rx="32" fill="rgba(255,255,255,0.18)"/>
+  <rect x="200" y="120" width="400" height="240" rx="24" fill="rgba(255,255,255,0.22)"/>
+  <circle cx="400" cy="320" r="70" fill="rgba(255,255,255,0.18)"/>
+  <text x="60" y="420" fill="#ffffff" font-family="Helvetica, Arial, sans-serif" font-size="56" font-weight="600">iPad Projects</text>
+  <text x="60" y="470" fill="rgba(255,255,255,0.75)" font-family="Helvetica, Arial, sans-serif" font-size="32">Immersive large screen experiences</text>
+</svg>

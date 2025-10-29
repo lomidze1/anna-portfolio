@@ -14,6 +14,7 @@ import Challenge from '../components/project/Challenge';
 import Strategy from '../components/project/Strategy';
 import Implementation from '../components/project/Implementation';
 import Outcomes from '../components/project/Outcomes';
+import SoftintermobShowcase from '../components/showcase/SoftintermobShowcase';
 
 interface ProjectData {
   id: string;
@@ -48,11 +49,17 @@ const ProjectDetail: React.FC = () => {
       <NavigationHeader />
       <div className='projects__item'>
         <Overview project={project} />
-        <Highlights projectDetails={project.projectDetails ?? {}} />
-        <Challenge projectDetails={project.projectDetails ?? {}} />
-        <Strategy projectDetails={project.projectDetails ?? {}} />
-        <Implementation project={project} />
-        <Outcomes outcomes={project.outcomes ?? {}} />
+        {project.id === 'softintermob' ? (
+          <SoftintermobShowcase />
+        ) : (
+          <>
+            <Highlights projectDetails={project.projectDetails ?? {}} />
+            <Challenge projectDetails={project.projectDetails ?? {}} />
+            <Strategy projectDetails={project.projectDetails ?? {}} />
+            <Implementation project={project} />
+            <Outcomes outcomes={project.outcomes ?? {}} />
+          </>
+        )}
       </div>
     </div>
   );

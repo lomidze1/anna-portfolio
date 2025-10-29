@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="iosGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f4cff"/>
+      <stop offset="100%" stop-color="#00d4ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#iosGradient)"/>
+  <circle cx="620" cy="110" r="70" fill="rgba(255,255,255,0.18)"/>
+  <circle cx="190" cy="360" r="110" fill="rgba(255,255,255,0.12)"/>
+  <path d="M400 150c55 0 100 45 100 100s-45 100-100 100-100-45-100-100 45-100 100-100z" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="12"/>
+  <text x="50" y="420" fill="#ffffff" font-family="Helvetica, Arial, sans-serif" font-size="56" font-weight="600">iOS Projects</text>
+  <text x="50" y="470" fill="rgba(255,255,255,0.75)" font-family="Helvetica, Arial, sans-serif" font-size="32">Mobile interfaces &amp; product flows</text>
+</svg>

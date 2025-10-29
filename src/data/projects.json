@@ -370,5 +370,39 @@
       "labelBounceRate": "projectDetails.businessMedia.label-bounce-rate",
       "bounceRate": "projectDetails.businessMedia.bounce-rate"
     }
+  },
+
+  {
+    "id": "softintermob",
+    "image": "/images/softintermob.png",
+    "year": "projects.softintermob.year",
+    "titleKey": "projects.softintermob.title",
+    "descriptionKey": "projects.softintermob.description",
+    "projectNameKey": "projects.softintermob.project-name",
+    "problemKey": "projects.softintermob.problem",
+    "solvingBlockNameKey": "projects.softintermob.solving-block-name",
+    "solvingKey": "projects.softintermob.solving",
+    "usersBlockNameKey": "projects.softintermob.users-block-name",
+    "usersPastKey": "projects.softintermob.users-past",
+    "usersNowKey": "projects.softintermob.users-now",
+    "roleKey": "projects.softintermob.role-name",
+    "positionKey": "projects.softintermob.position",
+    "positionKey2": "projects.softintermob.position-2",
+    "positionKey3": "projects.softintermob.position-3",
+    "toolsNameKey": "projects.tools-name",
+    "buttonKey": "projects.button",
+    "service1Key": "projects.softintermob.service1",
+    "service2Key": "projects.softintermob.service2",
+    "hasScreenVideo": true,
+    "projectDetails": {
+      "review-subtitle-01": "projectDetails.softintermob.review-subtitle-01",
+      "review-subtitle-02": "projectDetails.softintermob.review-subtitle-02",
+      "review-subtitle-03": "projectDetails.softintermob.review-subtitle-03"
+    },
+    "images": {
+      "slider": []
+    },
+
+    "outcomes": {}
   }
 ]

@@ -9,6 +9,7 @@
   max-height: none;
   position: relative;
   padding-top: 2rem;
+  padding-bottom: 0 !important;
 
   @include respond(md768) {
     padding-top: 1rem;
@@ -125,6 +126,7 @@
   .work-container {
     max-width: none;
     max-height: none;
+    padding: 0;
 
     h2 {
       text-align: center;
@@ -162,16 +164,15 @@
           aspect-ratio: 16 / 9;
           object-fit: cover;
           border-radius: 0.5rem;
-          transition: transform 0.4s ease-in-out;
-
-          &:hover {
-            transform: scale(1.05);
-          }
         }
 
         p {
           color: var(--color-text);
         }
+      }
+
+      .project-year {
+        margin-bottom: auto;
       }
     }
 
@@ -198,6 +199,29 @@
         padding: 2rem 1rem;
         gap: 1rem;
       }
+    }
+  }
+
+  .additional-work-container {
+    .project-card {
+      min-height: 220px;
+    }
+  }
+
+  .project-card__button {
+    margin-top: auto;
+    align-self: flex-start;
+    padding: 0.75rem 1.5rem;
+    border-radius: 999px;
+    background-color: var(--color-accent);
+    color: var(--color-bg);
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      background-color: var(--color-text);
+      color: var(--color-bg);
     }
   }
 }

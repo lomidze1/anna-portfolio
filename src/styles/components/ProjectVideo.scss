@@ -12,7 +12,6 @@
   border-radius: 4px;
   position: relative;
   overflow: hidden;
-  max-height: 250px;
 
   @include dark-theme {
     background-color: color.adjust($color-dark, $lightness: 5%);

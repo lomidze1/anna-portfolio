@@ -5,6 +5,10 @@ import AboutMe from './pages/AboutMe';
 import ContactMe from './pages/ContactMe';
 import ProjectDetail from './pages/ProjectDetail';
 import PageNotFound from './pages/PageNotFound';
+import IOSProjects from './pages/IOSProjects';
+import IPadProjects from './pages/IPadProjects';
+import TestWorks from './pages/TestWorks';
+import GraphicProjects from './pages/GraphicProjects';
 import Header from './components/header/Header';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
@@ -29,6 +33,10 @@ export default function App() {
           <Route path='/my-work' element={<MyWork />} />
           <Route path='/about-me' element={<AboutMe />} />
           <Route path='/contact-me' element={<ContactMe />} />
+          <Route path='/ios-projects' element={<IOSProjects />} />
+          <Route path='/ipad-projects' element={<IPadProjects />} />
+          <Route path='/graphic-projects' element={<GraphicProjects />} />
+          <Route path='/test-works' element={<TestWorks />} />
           <Route path='/projects/:id' element={<ProjectDetail />} />
         </Route>
 
