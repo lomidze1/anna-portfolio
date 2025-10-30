@@ -5,7 +5,7 @@
       {
         "id": "gta",
         "titleKey": "GTA",
-        "coverImage": "/images/additional-works/ios/gta/cover.jpg",
+        "coverImage": "/images/additional-works/ios/gta/Cover.jpg",
         "figmaLink": "https://www.figma.com/design/9lBQLwaYwf5e1Df5kBrSVK/Main---GTA?node-id=0-1&t=UdPPYIkO1gSNX7YR-1",
         "gallery": [
           "/images/additional-works/ios/gta/UI-KIT.png",
@@ -53,6 +53,26 @@
           "/images/additional-works/ios/gorilla-tag/05-Cheats.png",
           "/images/additional-works/ios/gorilla-tag/06-Skins.png",
           "/images/additional-works/ios/gorilla-tag/07-Editor.png"
+        ]
+      },
+      {
+        "id": "minecraft",
+        "titleKey": "minecraft",
+        "coverImage": "/images/additional-works/ios/minecraft/cover.png",
+        "figmaLink": "https://www.figma.com/design/MQAIU2lMFf3pb7qBky4X6Z/Unity---Mods-for-Minecraft--REF--73---Re-Design--Copy-?node-id=245-253&t=FLlF7w6XfKbvS4YJ-1",
+        "gallery": [
+          "/images/additional-works/ios/minecraft/UI-kit.png",
+          "/images/additional-works/ios/minecraft/Minecraft.png"
+        ]
+      },
+      {
+        "id": "crafty-craft",
+        "titleKey": "Crafty Craft",
+        "figmaLink": "https://www.figma.com/design/cAh1bGohCDJNTYGCOixE6t/iOS---Crafty-Craft--OUT-REF--45---Re-Design--Copy-?node-id=5660-4840&p=f&t=otNs8BMYPRbXj0Mh-0",
+        "coverImage": "/images/additional-works/ios/crafty-craft/cover.png",
+        "gallery": [
+          "/images/additional-works/ios/crafty-craft/ui-kit.png",
+          "/images/additional-works/ios/crafty-craft/crafty-craft.png"
         ]
       }
     ]
@@ -102,6 +122,15 @@
         "figmaLink": "https://www.figma.com/design/p8G4OXfwRzHeA27xDozPwJ/iOS---Mods-for-Gorilla-Tag--old-Gacha---REF--70---Re-Design--Copy-?node-id=15953-1521&p=f&t=ruWLKii9Z4Kh7yLg-0",
         "coverImage": "/images/additional-works/ipad/gorilla-tag/cover.png",
         "gallery": ["/images/additional-works/ipad/gorilla-tag/Gorilla-Tag.png"]
+      },
+      {
+        "id": "crafty-craft",
+        "titleKey": "Crafty Craft",
+        "figmaLink": "https://www.figma.com/design/cAh1bGohCDJNTYGCOixE6t/iOS---Crafty-Craft--OUT-REF--45---Re-Design--Copy-?node-id=5660-4841&p=f&t=otNs8BMYPRbXj0Mh-0",
+        "coverImage": "/images/additional-works/ipad/crafty-craft/cover.png",
+        "gallery": [
+          "/images/additional-works/ipad/crafty-craft/crafty-craft.png"
+        ]
       }
     ]
   },
