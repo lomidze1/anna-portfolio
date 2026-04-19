@@ -10,9 +10,12 @@ const Header = () => {
 
   return (
     <>
+      <a href='#main-content' className='skip-link'>
+        Skip to content
+      </a>
       <header className='header'>
         <Link to='/' title='Home' className='header__logo'>
-          <button type='button'>{t('header.name')}</button>
+          <span className='header__logo-text'>{t('header.name')}</span>
         </Link>
         <div className='header__navigation'>
           <Navbar enableToggle={true} />

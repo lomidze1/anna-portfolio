@@ -1,4 +1,3 @@
-// აღარ შეცვალო აღარაფერი იდიალურია! 13:08
 import { useState } from 'react';
 
 const useInputValidation = () => {

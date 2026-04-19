@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://anna-lomidze.vercel.app/sitemap.xml

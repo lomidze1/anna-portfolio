@@ -95,7 +95,7 @@ const ContactForm = () => {
         }, 2000);
       })
       .catch((err) => {
-        console.error('Email send failed:', err);
+        // Email send failed - error handled via UI status
         if (err?.status === 429) {
           setMessage('form.status.tooManyRequests');
         } else {
@@ -104,7 +104,6 @@ const ContactForm = () => {
         setStatus('error');
       });
 
-    console.log('Sending contact form:', formData);
   };
 
   return (

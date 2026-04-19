@@ -45,7 +45,7 @@
     height: fit-content;
     color: $hamburger-blue;
     z-index: 1;
-    background: $color-accent;
+    background: var(--color-sections);
     transition: opacity 0.2s;
     border-radius: 5px;
 

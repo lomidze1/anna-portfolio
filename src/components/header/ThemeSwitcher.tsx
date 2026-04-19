@@ -16,7 +16,13 @@ const ThemeSwitcher = () => {
     <div className='theme-switcher'>
       <button
         className='theme-toggle-btn'
-        onClick={toggleTheme}
+        onClick={() => {
+          document.documentElement.setAttribute('data-theme-transitioning', '');
+          toggleTheme();
+          setTimeout(() => {
+            document.documentElement.removeAttribute('data-theme-transitioning');
+          }, 500);
+        }}
         aria-label='Toggle Theme'
         title='Toggle Theme'
       >

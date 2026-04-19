@@ -7,15 +7,11 @@
   flex-direction: column;
   width: 100%;
   aspect-ratio: 16 / 9;
-  background-color: color.adjust($color-primary, $lightness: 5%);
+  background-color: var(--color-sections);
   border: 0.1px solid var(--color-accent);
   border-radius: 4px;
   position: relative;
   overflow: hidden;
-
-  @include dark-theme {
-    background-color: color.adjust($color-dark, $lightness: 5%);
-  }
 
   &--interactive {
     cursor: pointer;
@@ -35,10 +31,10 @@
     text-align: center;
     background: rgba(0, 0, 0, 0.6);
     transition: all 0.2s ease-in-out;
-    font-family: cursive;
+    font-family: $font-secondary;
     letter-spacing: 0.1rem;
     font-weight: 600;
-    color: $color-text;
+    color: var(--color-text);
     padding: 0.2rem;
   }
 

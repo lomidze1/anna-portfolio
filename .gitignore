@@ -23,3 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 *.env
+
+# 3D models (too large for GitHub; may move to LFS later)
+public/models/

@@ -16,6 +16,16 @@ html {
 body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-  background-color: $color-bg;
-  color: $color-text;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

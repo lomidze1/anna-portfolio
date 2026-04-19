@@ -1,57 +1,139 @@
 @use "../utils/mixins" as *;
 @use "../utils/variables" as *;
 
-.container {
-  max-height: none;
-  padding: 3rem 0;
-}
-
-.about-me-container {
+.about {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 2rem 5rem;
+  gap: 3rem;
+  position: relative;
+  overflow: hidden;
 }
 
-.about-me {
-  @include flex-center(column);
+// ─── Hero ───────────────────────────────────────────────────
+.about__hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
   text-align: center;
-  align-self: center;
-  justify-self: center;
+}
+
+.about__hero-image {
   width: 100%;
-  max-width: 35vw;
-  gap: 5rem;
+  max-width: 680px;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
+}
+
+.about__name {
+  font-family: $font-primary;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 700;
+  color: var(--color-text);
+  margin-top: 0.5rem;
+}
+
+.about__role {
+  font-size: 1.125rem;
+  color: var(--color-heading);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+// ─── Content ────────────────────────────────────────────────
+.about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  max-width: 680px;
+  width: 100%;
+}
+
+.about__section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  h2 {
+    font-family: $font-secondary;
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
+    font-weight: 600;
+    color: var(--color-heading);
+    letter-spacing: 0.02em;
+  }
 
   p {
-    @include fluid-font($font-sm, $font-xxl);
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-text);
+    opacity: 0.9;
   }
 }
 
-@include respond(xl1440) {
-  .about-me {
-    max-width: 45vw;
-    gap: 4rem;
+// ─── Skills ─────────────────────────────────────────────────
+.about__skills {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+
+  h2 {
+    font-family: $font-secondary;
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
+    font-weight: 600;
+    color: var(--color-heading);
   }
 }
-@include respond(lg1024) {
-  .about-me {
-    max-width: 50vw;
-    gap: 3.5rem;
+
+.about__skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.about__skill-badge {
+  padding: 8px 20px;
+  border-radius: 999px;
+  background: var(--color-sections);
+  color: var(--color-text);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(241, 163, 154, 0.2);
+    background: var(--color-highlight);
+    color: #1a1a2e;
   }
 }
+
+// ─── Responsive ─────────────────────────────────────────────
 @include respond(md768) {
-  .about-me {
-    max-width: 60vw;
-    gap: 3rem;
+  .about {
+    padding: 2rem 1.5rem 4rem;
+  }
+
+  .about__hero-image {
+    max-height: 300px;
   }
 }
+
 @include respond(sm576) {
-  .about-me {
-    max-width: 70vw;
-    gap: 2.5rem;
+  .about {
+    padding: 1.5rem 1rem 3rem;
   }
-}
-@include respond(mob375) {
-  .about-me {
-    max-width: 85vw;
-    gap: 2rem;
+
+  .about__hero-image {
+    max-height: 250px;
+    border-radius: 16px;
+  }
+
+  .about__section p {
+    font-size: 1rem;
   }
 }

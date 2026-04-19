@@ -9,14 +9,20 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  max-width: 1200px;
+  max-width: $container-max-width;
+  margin: 0 auto;
   height: var(--header-height);
   align-items: center;
   padding-inline: 32px;
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 1000;
+  background: rgba(var(--color-bg-rgb), 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: background-color 0.3s ease;
 
-  .header__logo button {
+  .header__logo .header__logo-text {
     background: none;
     border: none;
     font-size: clamp(1rem, 2vw, 1.5rem);

@@ -15,21 +15,25 @@ $solid-color-success: #24894b;
 
 :root {
   --color-bg: #dde1e4;
+  --color-bg-rgb: 221, 225, 228;
   --color-bg2: #010305;
   --color-text: #000000;
   --color-accent: #2e3a59;
   --color-border: #dde1e4;
   --color-highlight: #f1a39a;
+  --color-heading: #2e3a59;
   --color-sections: #c9d6df;
 }
 
 [data-theme="dark"] {
   --color-bg: #000000;
+  --color-bg-rgb: 0, 0, 0;
   --color-bg2: #2e3a59;
   --color-text: #ffffff;
   --color-accent: #c9d6df;
   --color-border: #c9d6df;
-  --color-highlight: hsl(34, 45%, 85%);
+  --color-highlight: #e8a99e;
+  --color-heading: #f1a39a;
   --color-sections: #2e3a59;
 }
 

@@ -9,7 +9,7 @@
   min-height: 100dvh;
   width: 100%;
   min-width: 100vw;
-  background-color: $color-text;
+  background-color: var(--color-text);
 
   .page404__wrapper {
     display: flex;
@@ -32,7 +32,7 @@
       }
 
       h1 {
-        font-family: cursive;
+        font-family: $font-secondary;
         font-weight: 200;
       }
     }
@@ -48,7 +48,7 @@
 
     .h3,
     .p {
-      font-family: cursive;
+      font-family: $font-secondary;
     }
 
     .page404__buttons {

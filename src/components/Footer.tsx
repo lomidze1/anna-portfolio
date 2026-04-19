@@ -2,8 +2,6 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import Navbar from './header/Navbar';
 import { FiDownload } from 'react-icons/fi';
-import MailchimpSubscribeForm from './form/MailchimpSubscribeForm';
-
 import {
   FaTwitter,
   FaInstagram,
@@ -25,7 +23,7 @@ const Footer = () => {
 
         <div className='footer__center'>
           <Link to='/' title='Home' className='header__logo'>
-            <button type='button'>{t('header.name')}</button>
+            <span className='header__logo-text'>{t('header.name')}</span>
           </Link>
 
           <div className='footer__socials'>
@@ -33,7 +31,7 @@ const Footer = () => {
               href='https://x.com/anna_lomid7583'
               target='_blank'
               rel='noopener noreferrer'
-              title='X-Twitter'
+              aria-label='X-Twitter'
             >
               <FaTwitter />
             </a>
@@ -41,7 +39,7 @@ const Footer = () => {
               href='https://www.behance.net/analomidze4'
               target='_blank'
               rel='noopener noreferrer'
-              title='Behance'
+              aria-label='Behance'
             >
               <FaBehance />
             </a>
@@ -49,7 +47,7 @@ const Footer = () => {
               href='https://t.me/anna_lomidze'
               target='_blank'
               rel='noopener noreferrer'
-              title='Telegram'
+              aria-label='Telegram'
             >
               <FaTelegramPlane />
             </a>
@@ -57,7 +55,7 @@ const Footer = () => {
               href='https://www.instagram.com/anuki_a/'
               target='_blank'
               rel='noopener noreferrer'
-              title='Instagram'
+              aria-label='Instagram'
             >
               <FaInstagram />
             </a>
@@ -65,43 +63,23 @@ const Footer = () => {
               href='https://www.linkedin.com/in/anna-lomidze'
               target='_blank'
               rel='noopener noreferrer'
-              title='LinkedIn'
+              aria-label='LinkedIn'
             >
               <FaLinkedinIn />
             </a>
           </div>
 
-          <span className='footer__vertical-stick'></span>
-
-          <div className='footer__newsletter'>
-            <MailchimpSubscribeForm />
-          </div>
-        </div>
-
-        <div className='footer__navbar navbar '>
-          <ul className='navbar__menu-items'>
-
-            <li>
-              <a href='/magazine'>{t('footer.magazine')}</a>
-            </li>
-            <li>
-              <a href='/ui-kits'>{t('footer.UI-Kits')}</a>
-            </li>
-            <li>
-              <a href='/blog'>{t('footer.blog')}</a>
-            </li>
-          </ul>
-
-          <a href='/resume.pdf' download className=' footer__download-btn '>
+          <a href='/resume.pdf' download className='footer__download-btn'>
             <FiDownload style={{ marginRight: '8px' }} />
             {t('footer.download-resume')}
           </a>
+
         </div>
       </div>
 
       <div className='footer__copyright'>
-        <p>© {t('footer.copyright')} </p>
-        <p>© {t('footer.reserve')} </p>
+        <p>&copy; {t('footer.copyright')} </p>
+        <p>&copy; {t('footer.reserve')} </p>
       </div>
     </footer>
   );
