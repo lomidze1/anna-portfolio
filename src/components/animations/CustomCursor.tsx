@@ -1,6 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+
+const CURSOR_VIEW_SELECTOR =
+  '.project-card, .showcase-card, .additional-work-card, [data-cursor="view"], [data-cursor-label]';
 
 const CustomCursor = () => {
+  const { t } = useTranslation();
   const dotRef = useRef<HTMLDivElement>(null);
   const circleRef = useRef<HTMLDivElement>(null);
   const mousePos = useRef({ x: 0, y: 0 });
@@ -9,6 +14,8 @@ const CustomCursor = () => {
   const [cursorLabel, setCursorLabel] = useState('');
   const [isVisible, setIsVisible] = useState(false);
   const rafRef = useRef<number>(0);
+  const tRef = useRef(t);
+  tRef.current = t;
 
   useEffect(() => {
     const isTouch = window.matchMedia('(pointer: coarse)').matches;
@@ -30,14 +37,15 @@ const CustomCursor = () => {
 
     const handleMouseOver = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
-      const projectCard = target.closest('.project-card, .showcase-card');
+      const viewTarget = target.closest(CURSOR_VIEW_SELECTOR) as HTMLElement | null;
       const interactive = target.closest(
         'a:not(.project-card), button, [role="button"], input, textarea, select, .lang-btn'
       );
 
-      if (projectCard) {
+      if (viewTarget) {
+        const customLabel = viewTarget.getAttribute('data-cursor-label');
         setIsHovering(true);
-        setCursorLabel('View');
+        setCursorLabel(customLabel || tRef.current('common.view'));
       } else if (interactive) {
         setIsHovering(true);
         setCursorLabel('');

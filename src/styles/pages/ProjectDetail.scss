@@ -1,6 +1,41 @@
 @use "../utils/variables" as *;
 @use "../utils/mixins" as *;
 
+.projects__item--story {
+  padding-top: 2rem;
+
+  .projects__story-grid {
+    display: grid;
+    grid-template-columns: 240px minmax(0, 1fr);
+    gap: 2rem;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-inline: 2rem;
+    align-items: start;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+      padding-inline: 1rem;
+    }
+  }
+
+  .projects__story-main {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    min-width: 0;
+  }
+
+  .projects__story-main > div[id^="chapter-"] {
+    scroll-margin-top: calc(var(--header-height, 72px) + 16px);
+  }
+
+  .projects__strategy--horizontal,
+  .projects__solution-implementation {
+    scroll-margin-top: calc(var(--header-height, 72px) + 16px);
+  }
+}
+
 .projects__item {
   display: flex;
   flex-direction: column;

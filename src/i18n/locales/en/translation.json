@@ -1,4 +1,8 @@
 {
+  "common": {
+    "view": "View"
+  },
+
   "header": {
     "name": "Anna Lomidze"
   },
