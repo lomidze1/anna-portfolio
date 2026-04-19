@@ -22,11 +22,11 @@
 
     &__title {
       color: var(--color-accent);
-      font-family: cursive;
+      font-family: $font-secondary;
       line-height: normal;
 
       span {
-        color: $hamburger-red;
+        color: var(--color-highlight);
       }
     }
 

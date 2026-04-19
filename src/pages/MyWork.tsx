@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import NavigationHeader from '../components/project/ProjectsNavigationHeader';
 import ProjectVideo from '../components/video/ProjectVideo';
 import ProjectVideoModal from '../components/video/ProjectVideoModal';
+import RevealOnScroll from '../components/animations/RevealOnScroll';
+import PageTransition from '../components/animations/PageTransition';
 import projectsData from '../data/projects.json';
 import '../styles/pages/MyWork.scss';
 
@@ -30,23 +32,25 @@ interface Project {
   service2Key: string;
 }
 
+const formatServices = (serviceText: string) =>
+  serviceText.split(',').map((part, i, arr) => (
+    <span key={i}>
+      {part.trim()}
+      {i < arr.length - 1 ? ', ' : ''}
+    </span>
+  ));
+
 const MyWork: React.FC = () => {
   const { t, i18n } = useTranslation();
 
   const projects = useMemo<Project[]>(() => projectsData as Project[], []);
   const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
 
-  const formatServices = (serviceText: string): string =>
-    serviceText
-      .split(',')
-      .map((part) => `<span>${part.trim()}</span>`)
-      .join(', ');
-
   const openModal = (path: string) => setSelectedVideo(path);
   const closeModal = () => setSelectedVideo(null);
 
   return (
-    <>
+    <PageTransition>
       <section className='work'>
         <NavigationHeader />
         <div className='work__body'>
@@ -55,79 +59,75 @@ const MyWork: React.FC = () => {
             const itemClass = `work__item${isEven ? ' work__item--even' : ''}`;
 
             return (
-              <div key={project.id} className={itemClass}>
-                <div className='work__content'>
-                  <div className='work__title'>
-                    <h1 className='h1 work__projectName'>
-                      <span className='p'>
-                        {index + 1 < 10 ? `0${index + 1}` : index + 1}.
-                      </span>
-                      {t(project.projectNameKey)}
-                    </h1>
-                  </div>
-
-                  <ProjectVideo
-                    videoSrc={`/videos/${project.id}.mp4`}
-                    onClick={() => openModal(`/videos/${project.id}.mp4`)}
-                    ctaText={t('projects_header.click_to_watch')}
-                    isInteractive
-                    aria-label={t('projects.project-detail.watch-video')}
-                  />
-
-                  <div className='work__problem'>
-                    <h2 className='h2'>{t(project.problemKey)}</h2>
-                  </div>
-
-                  <div className='work__solving'>
-                    <h3 className='h3'>{t(project.solvingBlockNameKey)}</h3>
-                    <p className='p'>{t(project.solvingKey)}</p>
-                  </div>
-
-                  <div className='work__users'>
-                    <h3 className='h3'>{t(project.usersBlockNameKey)}</h3>
-                    <p className='p'>{t(project.usersPastKey)}</p>
-                    <p className='p'>{t(project.usersNowKey)}</p>
-                  </div>
-
-                  <div className='work__cta-box'>
-                    <div className='work__role'>
-                      <h4 className='h4'>{t(project.roleKey)}</h4>
-                      <div>
-                        <p className='p'>{t(project.positionKey)}</p>
-                        <p className='p'>{t(project.positionKey2)}</p>
-                        {project.positionKey3 &&
-                          i18n.exists(project.positionKey3) && (
-                            <p className='p'>{t(project.positionKey3)}</p>
-                          )}
-                      </div>
+              <RevealOnScroll key={project.id} variant={isEven ? 'slide-left' : 'slide-right'}>
+                <div className={itemClass}>
+                  <div className='work__content'>
+                    <div className='work__title'>
+                      <h2 className='h2 work__projectName'>
+                        <span className='p'>
+                          {index + 1 < 10 ? `0${index + 1}` : index + 1}.
+                        </span>
+                        {t(project.projectNameKey)}
+                      </h2>
                     </div>
 
-                    <div className='work__tools'>
-                      <h4 className='h4'>{t(project.toolsNameKey)}</h4>
-                      <div>
-                        <p
-                          className='p'
-                          dangerouslySetInnerHTML={{
-                            __html: formatServices(t(project.service1Key)),
-                          }}
-                        ></p>
-                        <p
-                          className='p'
-                          dangerouslySetInnerHTML={{
-                            __html: formatServices(t(project.service2Key)),
-                          }}
-                        ></p>
-                      </div>
+                    <ProjectVideo
+                      videoSrc={`/videos/${project.id}.mp4`}
+                      onClick={() => openModal(`/videos/${project.id}.mp4`)}
+                      ctaText={t('projects_header.click_to_watch')}
+                      isInteractive
+                      aria-label={t('projects.project-detail.watch-video')}
+                    />
+
+                    <div className='work__problem'>
+                      <h3 className='h3'>{t(project.problemKey)}</h3>
                     </div>
 
-                    <div className='work__button'>
-                      <Link to={`/projects/${project.id}`}>
-                        {t(project.buttonKey)}
-                      </Link>
+                    <div className='work__solving'>
+                      <h4 className='h4'>{t(project.solvingBlockNameKey)}</h4>
+                      <p className='p'>{t(project.solvingKey)}</p>
+                    </div>
+
+                    <div className='work__users'>
+                      <h4 className='h4'>{t(project.usersBlockNameKey)}</h4>
+                      <p className='p'>{t(project.usersPastKey)}</p>
+                      <p className='p'>{t(project.usersNowKey)}</p>
+                    </div>
+
+                    <div className='work__cta-box'>
+                      <div className='work__role'>
+                        <h4 className='h4'>{t(project.roleKey)}</h4>
+                        <div>
+                          <p className='p'>{t(project.positionKey)}</p>
+                          <p className='p'>{t(project.positionKey2)}</p>
+                          {project.positionKey3 &&
+                            i18n.exists(project.positionKey3) && (
+                              <p className='p'>{t(project.positionKey3)}</p>
+                            )}
+                        </div>
+                      </div>
+
+                      <div className='work__tools'>
+                        <h4 className='h4'>{t(project.toolsNameKey)}</h4>
+                        <div>
+                          <p className='p'>
+                            {formatServices(t(project.service1Key))}
+                          </p>
+                          <p className='p'>
+                            {formatServices(t(project.service2Key))}
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className='work__button'>
+                        <Link to={`/projects/${project.id}`}>
+                          {t(project.buttonKey)}
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </RevealOnScroll>
             );
           })}
         </div>
@@ -140,7 +140,7 @@ const MyWork: React.FC = () => {
           aria-label={t('projects.project-detail.close-video')}
         />
       )}
-    </>
+    </PageTransition>
   );
 };
 

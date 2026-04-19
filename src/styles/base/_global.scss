@@ -1,6 +1,29 @@
 @use "../utils/mixins" as *;
 @use "../utils/variables" as *;
 
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.75rem 1.5rem;
+  background: var(--color-highlight);
+  color: #1a1a2e;
+  font-weight: 600;
+  border-radius: 0 0 8px 8px;
+  z-index: 9999;
+  text-decoration: none;
+  transition: top 0.2s ease;
+
+  &:focus {
+    top: 0;
+  }
+}
+
+#main-content:focus {
+  outline: none;
+}
+
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
@@ -118,17 +141,22 @@ button {
   @include font(500, 1rem, 1.4);
   cursor: pointer;
   background-color: var(--color-accent);
-  color: var(--color-text);
+  color: var(--color-bg);
   border: 1px solid var(--color-border);
 
   &:hover {
     background-color: var(--color-highlight);
+    color: #1a1a2e;
   }
 }
 
-a:hover,
-a:focus {
+a:hover {
   outline: none;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--color-highlight);
+  outline-offset: 2px;
 }
 
 .h1 {

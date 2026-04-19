@@ -46,11 +46,15 @@ const LanguageSwitcher = () => {
   }, [dropdownOpen]);
 
   useEffect(() => {
+    const controller = new AbortController();
+
     const setLanguageByGeoIP = async () => {
       if (localStorage.getItem('langSet')) return;
 
       try {
-        const res = await fetch('https://ipapi.co/json/');
+        const res = await fetch('https://ipapi.co/json/', {
+          signal: controller.signal,
+        });
         const data = await res.json();
 
         let detectedLang = 'en';
@@ -58,18 +62,23 @@ const LanguageSwitcher = () => {
         else if (data.country === 'RU') detectedLang = 'ru';
 
         i18n.changeLanguage(detectedLang);
+        document.documentElement.lang = detectedLang;
         setSelectedLang(detectedLang);
         localStorage.setItem('langSet', 'true');
       } catch (error) {
-        console.error('GeoIP language detection failed:', error);
+        if (!controller.signal.aborted) {
+          // GeoIP detection failed - fallback to browser language
+        }
       }
     };
 
     setLanguageByGeoIP();
+    return () => controller.abort();
   }, [i18n]);
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
+    document.documentElement.lang = lng;
     setSelectedLang(lng);
     setDropdownOpen(false);
   };
@@ -93,9 +102,16 @@ const LanguageSwitcher = () => {
       {dropdownOpen && (
         <ul className='lang-menu'>
           {Object.entries(flagMap).map(([code, flag]) => (
-            <li key={code} onClick={() => changeLanguage(code)}>
-              <img src={flag} alt={languageLabels[code]} />
-              <span>{languageLabels[code]}</span>
+            <li key={code}>
+              <button
+                type='button'
+                className='lang-option'
+                onClick={() => changeLanguage(code)}
+                aria-label={`Switch to ${languageLabels[code]}`}
+              >
+                <img src={flag} alt={languageLabels[code]} />
+                <span>{languageLabels[code]}</span>
+              </button>
             </li>
           ))}
         </ul>

@@ -11,7 +11,7 @@ i18n
   .use(initReactI18next)
   .init({
     fallbackLng: 'en',
-    debug: true,
+    debug: import.meta.env.DEV,
     resources: {
       en: { translation: enTranslation },
       ru: { translation: ruTranslation },
@@ -21,5 +21,9 @@ i18n
       escapeValue: false
     }
   });
+
+i18n.on('languageChanged', (lng: string) => {
+  document.documentElement.lang = lng;
+});
 
 export default i18n;

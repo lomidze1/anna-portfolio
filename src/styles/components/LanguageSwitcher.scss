@@ -27,8 +27,8 @@
     position: absolute;
     top: 55px;
     right: 5px;
-    color: $color-text;
-    background-color: $color-dark;
+    color: var(--color-text);
+    background-color: var(--color-accent);
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 

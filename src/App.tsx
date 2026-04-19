@@ -1,23 +1,29 @@
+import { lazy, Suspense } from 'react';
 import { Routes, Route, Outlet } from 'react-router-dom';
-import Home from './pages/Home';
-import MyWork from './pages/MyWork';
-import AboutMe from './pages/AboutMe';
-import ContactMe from './pages/ContactMe';
-import ProjectDetail from './pages/ProjectDetail';
-import PageNotFound from './pages/PageNotFound';
-import IOSProjects from './pages/IOSProjects';
-import IPadProjects from './pages/IPadProjects';
-import TestWorks from './pages/TestWorks';
-import GraphicProjects from './pages/GraphicProjects';
 import Header from './components/header/Header';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import CustomCursor from './components/animations/CustomCursor';
+import ScrollProgress from './components/animations/ScrollProgress';
+
+const Home = lazy(() => import('./pages/Home'));
+const MyWork = lazy(() => import('./pages/MyWork'));
+const AboutMe = lazy(() => import('./pages/AboutMe'));
+const ContactMe = lazy(() => import('./pages/ContactMe'));
+const ProjectDetail = lazy(() => import('./pages/ProjectDetail'));
+const PageNotFound = lazy(() => import('./pages/PageNotFound'));
+const IOSProjects = lazy(() => import('./pages/IOSProjects'));
+const IPadProjects = lazy(() => import('./pages/IPadProjects'));
+const TestWorks = lazy(() => import('./pages/TestWorks'));
+const GraphicProjects = lazy(() => import('./pages/GraphicProjects'));
 
 function MainLayout() {
   return (
     <>
       <Header />
-      <Outlet />
+      <main id='main-content' tabIndex={-1}>
+        <Outlet />
+      </main>
       <Footer />
     </>
   );
@@ -26,22 +32,26 @@ function MainLayout() {
 export default function App() {
   return (
     <>
+      <CustomCursor />
+      <ScrollProgress />
       <ScrollToTop />
-      <Routes>
-        <Route element={<MainLayout />}>
-          <Route path='/' element={<Home />} />
-          <Route path='/my-work' element={<MyWork />} />
-          <Route path='/about-me' element={<AboutMe />} />
-          <Route path='/contact-me' element={<ContactMe />} />
-          <Route path='/ios-projects' element={<IOSProjects />} />
-          <Route path='/ipad-projects' element={<IPadProjects />} />
-          <Route path='/graphic-projects' element={<GraphicProjects />} />
-          <Route path='/test-works' element={<TestWorks />} />
-          <Route path='/projects/:id' element={<ProjectDetail />} />
-        </Route>
+      <Suspense fallback={<div className='page-loading' />}>
+        <Routes>
+          <Route element={<MainLayout />}>
+            <Route path='/' element={<Home />} />
+            <Route path='/my-work' element={<MyWork />} />
+            <Route path='/about-me' element={<AboutMe />} />
+            <Route path='/contact-me' element={<ContactMe />} />
+            <Route path='/ios-projects' element={<IOSProjects />} />
+            <Route path='/ipad-projects' element={<IPadProjects />} />
+            <Route path='/graphic-projects' element={<GraphicProjects />} />
+            <Route path='/test-works' element={<TestWorks />} />
+            <Route path='/projects/:id' element={<ProjectDetail />} />
+          </Route>
 
-        <Route path='*' element={<PageNotFound />} />
-      </Routes>
+          <Route path='*' element={<PageNotFound />} />
+        </Routes>
+      </Suspense>
     </>
   );
 }
