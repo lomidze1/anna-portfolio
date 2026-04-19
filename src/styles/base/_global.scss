@@ -133,7 +133,8 @@ li {
   @include font(400, 1rem, 1);
 }
 
-span {
+p > span,
+li > span {
   @include font(400, 0.95rem, 1.5);
 }
 

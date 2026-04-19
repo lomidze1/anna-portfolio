@@ -1,5 +1,5 @@
 import "../styles/pages/Home.scss";
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useContext } from "react";
 import { useTranslation } from "react-i18next";
 import projects from "../data/projects.json";
 import { Link } from "react-router-dom";
@@ -7,6 +7,7 @@ import RevealOnScroll from "../components/animations/RevealOnScroll";
 import SplitText from "../components/animations/SplitText";
 import PageTransition from "../components/animations/PageTransition";
 import { useDeviceCapability } from "../hooks/useDeviceCapability";
+import { ThemeContext } from "../context/ThemeContext";
 
 const HeroBackground = lazy(
   () => import("../components/animations/HeroBackground")
@@ -15,6 +16,7 @@ const HeroBackground = lazy(
 const Home = () => {
   const { t } = useTranslation();
   const capability = useDeviceCapability();
+  const { theme } = useContext(ThemeContext);
   const secondaryProjects = [
     {
       id: "ios",
@@ -36,7 +38,7 @@ const Home = () => {
     <PageTransition>
       <div className="home">
         <section className="hero">
-          {capability === "high" ? (
+          {capability === "high" && theme === "dark" ? (
             <Suspense fallback={null}>
               <HeroBackground />
             </Suspense>

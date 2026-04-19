@@ -1,0 +1,217 @@
+@use "../utils/variables" as *;
+
+.projects__strategy--horizontal {
+  padding-bottom: 0;
+  position: relative;
+}
+
+.horizontal-strategy__lede {
+  margin: 1rem 0 2rem;
+  max-width: 60ch;
+  line-height: 1.35;
+}
+
+.horizontal-strategy__stage {
+  position: relative;
+  width: 100%;
+}
+
+.horizontal-strategy__pin {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(
+    180deg,
+    var(--color-bg) 0%,
+    var(--color-sections, var(--color-bg)) 100%
+  );
+}
+
+.horizontal-strategy__track {
+  display: flex;
+  height: 70vh;
+  will-change: transform;
+  transition: transform 0.05s linear;
+}
+
+.horizontal-strategy__slide {
+  flex-shrink: 0;
+  height: 100%;
+  padding: 0 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.horizontal-strategy__card {
+  max-width: 640px;
+  width: 100%;
+  padding: 2.5rem 2.75rem;
+  background: #ffffff;
+  border: 1px solid rgba(46, 58, 89, 0.08);
+  border-radius: 16px;
+  box-shadow:
+    0 24px 60px rgba(0, 0, 0, 0.12),
+    0 4px 12px rgba(0, 0, 0, 0.06);
+
+  [data-theme="dark"] & {
+    background: #12141a;
+    border-color: rgba(255, 255, 255, 0.06);
+    box-shadow:
+      0 24px 60px rgba(0, 0, 0, 0.45),
+      0 4px 12px rgba(0, 0, 0, 0.25);
+  }
+  transform: scale(0.94);
+  opacity: 0.55;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    padding: 1px;
+    background: linear-gradient(
+      135deg,
+      rgba(241, 163, 154, 0.35),
+      transparent 60%
+    );
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+}
+
+.horizontal-strategy__slide--active .horizontal-strategy__card {
+  transform: scale(1);
+  opacity: 1;
+
+  &::before {
+    opacity: 1;
+  }
+}
+
+.horizontal-strategy__index {
+  display: inline-block;
+  font-family: $font-secondary, sans-serif;
+  font-variant-numeric: tabular-nums;
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  color: var(--color-highlight);
+  margin-bottom: 1.5rem;
+
+  span {
+    color: var(--color-text);
+    opacity: 0.4;
+    font-size: inherit;
+  }
+}
+
+.horizontal-strategy__title {
+  margin-bottom: 1rem;
+  line-height: 1.25;
+}
+
+.horizontal-strategy__text {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  opacity: 0.85;
+}
+
+.horizontal-strategy__progress {
+  position: absolute;
+  bottom: 5vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(420px, 70vw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.horizontal-strategy__progress-fill {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background: rgba(241, 163, 154, 0.18);
+  border-radius: 2px;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: var(--fill, 0%);
+    background: var(--color-highlight);
+    border-radius: inherit;
+    transition: width 0.1s linear;
+  }
+}
+
+.horizontal-strategy__dots {
+  display: flex;
+  gap: 10px;
+}
+
+.horizontal-strategy__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-text);
+  opacity: 0.25;
+  transition: all 0.3s ease;
+}
+
+.horizontal-strategy__dot--active {
+  background: var(--color-highlight);
+  opacity: 1;
+  transform: scale(1.4);
+  box-shadow: 0 0 0 4px rgba(241, 163, 154, 0.22);
+}
+
+@media (max-width: 768px) {
+  .horizontal-strategy__stage {
+    height: auto !important;
+  }
+  .horizontal-strategy__pin {
+    position: static;
+    height: auto;
+    overflow: visible;
+  }
+  .horizontal-strategy__track {
+    flex-direction: column;
+    height: auto;
+    transform: none !important;
+    width: 100% !important;
+  }
+  .horizontal-strategy__slide {
+    width: 100% !important;
+    padding: 1rem 1rem 2rem;
+  }
+  .horizontal-strategy__card {
+    transform: none;
+    opacity: 1;
+  }
+  .horizontal-strategy__progress {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .horizontal-strategy__track {
+    transition: none;
+  }
+}
