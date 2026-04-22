@@ -158,40 +158,5 @@
         ]
       }
     ]
-  },
-  "test": {
-    "viewAllPath": "/test-works",
-    "items": [
-      {
-        "id": "prototype-hud",
-        "titleKey": "softintermob.items.prototype-hud.title",
-        "coverImage": "/images/additional-works/test/prototype-hud/cover.png",
-        "gallery": [
-          "/images/additional-works/test/prototype-hud/concept-01.png",
-          "/images/additional-works/test/prototype-hud/concept-02.png",
-          "/images/additional-works/test/prototype-hud/concept-03.png"
-        ]
-      },
-      {
-        "id": "gesture-lab",
-        "titleKey": "softintermob.items.gesture-lab.title",
-        "coverImage": "/images/additional-works/test/gesture-lab/cover.png",
-        "gallery": [
-          "/images/additional-works/test/gesture-lab/concept-01.png",
-          "/images/additional-works/test/gesture-lab/concept-02.png",
-          "/images/additional-works/test/gesture-lab/concept-03.png"
-        ]
-      },
-      {
-        "id": "color-experiments",
-        "titleKey": "softintermob.items.color-experiments.title",
-        "coverImage": "/images/additional-works/test/color-experiments/cover.png",
-        "gallery": [
-          "/images/additional-works/test/color-experiments/concept-01.png",
-          "/images/additional-works/test/color-experiments/concept-02.png",
-          "/images/additional-works/test/color-experiments/concept-03.png"
-        ]
-      }
-    ]
   }
 }

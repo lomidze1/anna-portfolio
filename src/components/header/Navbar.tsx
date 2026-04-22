@@ -52,6 +52,11 @@ const Navbar: React.FC<NavbarProps> = ({
               {t('navbar.work')}
             </NavLink>
           </li>
+          <li title='Shop'>
+            <NavLink to='/creative-products' onClick={() => setIsOpen(false)}>
+              {t('navbar.shop')}
+            </NavLink>
+          </li>
           <li title='About Me'>
             <NavLink
               to='/about-me'

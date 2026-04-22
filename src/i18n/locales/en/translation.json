@@ -11,6 +11,7 @@
     "home": "Home",
     "about": "About Me",
     "work": "My Work",
+    "shop": "Shop",
     "contact": "Contact Me"
   },
 
@@ -21,13 +22,93 @@
 
   "hero-welcome": {
     "welcome-message": "Hi! Welcome to my design space!",
-    "welcome-description": "I’m a UI/UX designer passionate about solving problems in simple and elegant ways. A perfectionist by nature, I have a sharp eye for detail and a deep interest in user psychology and behavior analysis. My focus is on usability, creativity, and clear communication to craft meaningful digital experiences.",
+    "welcome-description": "I'm Anna — a UI/UX designer and illustrator. I design mobile apps and digital interfaces for companies, and I create personalized products — children's books, posters, logos, and banners.",
+    "cta-primary": "Explore my work",
+    "cta-secondary": "Shop products",
     "hero-quote": "Design is not just what it looks like and feels like. Design is how it works",
     "hero-quote-writer": "— Steve Jobs"
   },
 
   "hero-work": {
     "title": "Case Studies"
+  },
+
+  "home": {
+    "sections-title": "What I do",
+    "case-studies": {
+      "view-all": "View all projects"
+    },
+    "design-work": {
+      "title": "Design & UX Work",
+      "description": "Mobile app and graphic design for companies — iOS, iPad, and creative direction.",
+      "image": "/images/design-work-cover.svg"
+    },
+    "creative-products": {
+      "title": "Creative Products",
+      "description": "Personalized children's books, posters, logos, and banners — made by me, available on Etsy.",
+      "image": "/images/creative-products-cover.svg"
+    },
+    "etsy-banner": {
+      "title": "Find more in my Etsy shop",
+      "description": "Personalized products ready to order — delivered worldwide.",
+      "cta": "Visit Etsy"
+    }
+  },
+
+  "design-work": {
+    "title": "Design & UX Work",
+    "description": "Interfaces, flows, and graphic art crafted for companies across iOS, iPad, and marketing."
+  },
+
+  "creative-products": {
+    "title": "Creative Products",
+    "description": "Personalized products I design and sell. Tap a category below to see what's available.",
+    "buy-on-etsy": "Buy on Etsy",
+    "buy-on-etsy-description": "Available now in my Etsy shop.",
+    "books": {
+      "title": "Children's Books",
+      "description": "3–4 page personalized short books where your child is the superhero.",
+      "image": "/images/creative-products/books/placeholder-cover.svg",
+      "items": {
+        "superhero-child-book-01": {
+          "title": "My Little Superhero",
+          "description": "A 3–4 page personalized storybook turning your child into the hero of their own adventure."
+        }
+      }
+    },
+    "posters": {
+      "title": "Posters",
+      "description": "Printable and shipped posters for kids' rooms, events, and brands.",
+      "image": "/images/creative-products/posters/placeholder-cover.svg",
+      "items": {
+        "kids-room-poster-01": {
+          "title": "Kids Room Poster",
+          "description": "Playful illustrated poster designed for nurseries and children's rooms."
+        }
+      }
+    },
+    "logos": {
+      "title": "Logos",
+      "description": "Custom logo design for small businesses and personal brands.",
+      "image": "/images/creative-products/logos/placeholder-cover.svg",
+      "items": {
+        "brand-logo-01": {
+          "title": "Brand Logo",
+          "description": "Clean, memorable logo mark with a custom mini-guideline."
+        }
+      }
+    },
+    "banners": {
+      "title": "Advertising Banners",
+      "description": "Digital and print-ready banners for campaigns, social media, and events.",
+      "image": "/images/creative-products/banners/placeholder-cover.svg",
+      "items": {
+        "ad-banner-01": {
+          "title": "Advertising Banner",
+          "description": "Custom digital banner set optimized for social ads and web campaigns."
+        }
+      }
+    }
   },
 
   "additional-work": {
@@ -41,9 +122,6 @@
     "graphic-title": "Graphic Art",
     "graphic-description": "Key art, promo layouts, and brand illustrations.",
     "graphic-image": "/images/graphic-projects.svg",
-    "test-title": "Test Works",
-    "test-description": "Concept explorations and experimental design studies.",
-    "test-image": "/images/test-works.svg",
     "figma-description": "To explore the full project in detail, please visit Figma.",
     "figma-button": "Open in Figma"
   },

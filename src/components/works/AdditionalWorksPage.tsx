@@ -1,7 +1,9 @@
 import { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import additionalWorks from '../../data/additionalWorks.json';
+import creativeProducts from '../../data/creativeProducts.json';
 import GalleryModal from '../common/GalleryModal';
+import WorkCard from './WorkCard';
 import type { ShowcaseItem } from '../showcase/ShowcaseSection';
 
 interface AdditionalWorksCategory {
@@ -28,7 +30,11 @@ const AdditionalWorksPage = ({
   } | null>(null);
 
   const data = useMemo(
-    () => additionalWorks as AdditionalWorksMap,
+    () =>
+      ({
+        ...(additionalWorks as AdditionalWorksMap),
+        ...(creativeProducts as AdditionalWorksMap),
+      }) as AdditionalWorksMap,
     []
   );
 
@@ -48,6 +54,9 @@ const AdditionalWorksPage = ({
     );
   }
 
+  const openGallery = (item: ShowcaseItem) =>
+    setActiveItem({ title: t(item.titleKey), images: item.gallery });
+
   return (
     <section className={sectionClassName}>
       <div className='additional-work-page__intro'>
@@ -56,45 +65,9 @@ const AdditionalWorksPage = ({
       </div>
 
       <div className='additional-work-page__grid'>
-        {items.map((item) => {
-          const title = t(item.titleKey);
-          const openGallery = () =>
-            setActiveItem({
-              title,
-              images: item.gallery,
-            });
-
-          return (
-            <article key={item.id} className='additional-work-card'>
-              <button
-                type='button'
-                className='additional-work-card__content'
-                onClick={openGallery}
-              >
-                <div className='additional-work-card__image'>
-                  <img src={item.coverImage} alt={title} loading='lazy' />
-                </div>
-                <h2 className='h3 additional-work-card__title'>{title}</h2>
-              </button>
-
-              {item.figmaLink && (
-                <div className='additional-work-card__cta'>
-                  <p className='p additional-work-card__cta-text'>
-                    {t('additional-work.figma-description')}
-                  </p>
-                  <a
-                    href={item.figmaLink}
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    className='additional-work-card__cta-button'
-                  >
-                    {t('additional-work.figma-button')}
-                  </a>
-                </div>
-              )}
-            </article>
-          );
-        })}
+        {items.map((item) => (
+          <WorkCard key={item.id} item={item} onOpenGallery={openGallery} />
+        ))}
       </div>
 
       {activeItem && (

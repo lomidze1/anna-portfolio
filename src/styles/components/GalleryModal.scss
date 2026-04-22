@@ -1,3 +1,11 @@
+body.modal-open .header {
+  display: none;
+}
+
+body.modal-open .category-nav-page__subnav {
+  top: 0;
+}
+
 .gallery-modal__overlay {
   position: fixed;
   inset: 0;
@@ -6,7 +14,7 @@
   justify-content: center;
   align-items: center;
   padding: 0rem;
-  z-index: 999;
+  z-index: 1100;
 }
 
 .gallery-modal {

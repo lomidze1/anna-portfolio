@@ -1,0 +1,62 @@
+{
+  "books": {
+    "viewAllPath": "/creative-products?category=books",
+    "items": [
+      {
+        "id": "superhero-child-book-01",
+        "titleKey": "creative-products.books.items.superhero-child-book-01.title",
+        "descriptionKey": "creative-products.books.items.superhero-child-book-01.description",
+        "coverImage": "/images/creative-products/books/placeholder-cover.svg",
+        "gallery": [
+          "/images/creative-products/books/placeholder-cover.svg"
+        ],
+        "externalLink": "https://www.etsy.com/shop/GeoLineStudio?ref=profile_header"
+      }
+    ]
+  },
+  "posters": {
+    "viewAllPath": "/creative-products?category=posters",
+    "items": [
+      {
+        "id": "kids-room-poster-01",
+        "titleKey": "creative-products.posters.items.kids-room-poster-01.title",
+        "descriptionKey": "creative-products.posters.items.kids-room-poster-01.description",
+        "coverImage": "/images/creative-products/posters/placeholder-cover.svg",
+        "gallery": [
+          "/images/creative-products/posters/placeholder-cover.svg"
+        ],
+        "externalLink": "https://www.etsy.com/shop/GeoLineStudio?ref=profile_header"
+      }
+    ]
+  },
+  "logos": {
+    "viewAllPath": "/creative-products?category=logos",
+    "items": [
+      {
+        "id": "brand-logo-01",
+        "titleKey": "creative-products.logos.items.brand-logo-01.title",
+        "descriptionKey": "creative-products.logos.items.brand-logo-01.description",
+        "coverImage": "/images/creative-products/logos/placeholder-cover.svg",
+        "gallery": [
+          "/images/creative-products/logos/placeholder-cover.svg"
+        ],
+        "externalLink": "https://www.etsy.com/shop/GeoLineStudio?ref=profile_header"
+      }
+    ]
+  },
+  "banners": {
+    "viewAllPath": "/creative-products?category=banners",
+    "items": [
+      {
+        "id": "ad-banner-01",
+        "titleKey": "creative-products.banners.items.ad-banner-01.title",
+        "descriptionKey": "creative-products.banners.items.ad-banner-01.description",
+        "coverImage": "/images/creative-products/banners/placeholder-cover.svg",
+        "gallery": [
+          "/images/creative-products/banners/placeholder-cover.svg"
+        ],
+        "externalLink": "https://www.etsy.com/shop/GeoLineStudio?ref=profile_header"
+      }
+    ]
+  }
+}

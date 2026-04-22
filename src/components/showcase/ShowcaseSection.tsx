@@ -7,6 +7,10 @@ export interface ShowcaseItem {
   coverImage: string;
   gallery: string[];
   figmaLink?: string;
+  descriptionKey?: string;
+  externalLink?: string;
+  externalLinkLabelKey?: string;
+  externalLinkDescriptionKey?: string;
 }
 
 interface ShowcaseSectionProps {
