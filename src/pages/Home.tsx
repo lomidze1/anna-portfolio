@@ -13,26 +13,33 @@ const HeroBackground = lazy(
   () => import("../components/animations/HeroBackground")
 );
 
+const HOME_CASE_STUDIES_COUNT = 3;
+
+const homeSections = [
+  {
+    id: "design-work",
+    titleKey: "home.design-work.title",
+    descriptionKey: "home.design-work.description",
+    imageKey: "home.design-work.image",
+    path: "/design-work",
+  },
+  {
+    id: "creative-products",
+    titleKey: "home.creative-products.title",
+    descriptionKey: "home.creative-products.description",
+    imageKey: "home.creative-products.image",
+    path: "/creative-products",
+  },
+];
+
+const ETSY_URL = "https://www.etsy.com/shop/GeoLineStudio?ref=profile_header";
+
 const Home = () => {
   const { t } = useTranslation();
   const capability = useDeviceCapability();
   const { theme } = useContext(ThemeContext);
-  const secondaryProjects = [
-    {
-      id: "ios",
-      titleKey: "additional-work.ios-title",
-      descriptionKey: "additional-work.ios-description",
-      imageKey: "additional-work.ios-image",
-      path: "/ios-projects",
-    },
-    {
-      id: "test",
-      titleKey: "additional-work.test-title",
-      descriptionKey: "additional-work.test-description",
-      imageKey: "additional-work.test-image",
-      path: "/test-works",
-    },
-  ];
+
+  const caseStudies = projects.slice(0, HOME_CASE_STUDIES_COUNT);
 
   return (
     <PageTransition>
@@ -62,9 +69,17 @@ const Home = () => {
               </p>
             </RevealOnScroll>
             <RevealOnScroll variant="scale-up" delay={900} immediate>
-              <Link to="/my-work" className="hero__cta">
-                {t("hero-work.title")}
-              </Link>
+              <div className="hero__cta-group">
+                <Link to="/my-work" className="hero__cta hero__cta--primary">
+                  {t("hero-welcome.cta-primary")}
+                </Link>
+                <Link
+                  to="/creative-products"
+                  className="hero__cta hero__cta--secondary"
+                >
+                  {t("hero-welcome.cta-secondary")}
+                </Link>
+              </div>
             </RevealOnScroll>
           </div>
 
@@ -95,7 +110,7 @@ const Home = () => {
           </RevealOnScroll>
 
           <div className="projects-box">
-            {projects.map((project, index) => (
+            {caseStudies.map((project, index) => (
               <RevealOnScroll
                 key={project.id}
                 delay={index * 150}
@@ -113,15 +128,23 @@ const Home = () => {
               </RevealOnScroll>
             ))}
           </div>
+
+          <RevealOnScroll variant="fade-up">
+            <div className="work-container__view-all-wrapper">
+              <Link to="/my-work" className="work-container__view-all">
+                {t("home.case-studies.view-all")}
+              </Link>
+            </div>
+          </RevealOnScroll>
         </section>
 
-        <section className="work-container additional-work-container">
+        <section className="work-container additional-work-container home-sections">
           <RevealOnScroll variant="rotate-in">
-            <h2 className="h2">{t("additional-work.title")}</h2>
+            <h2 className="h2">{t("home.sections-title")}</h2>
           </RevealOnScroll>
 
-          <div className="projects-box">
-            {secondaryProjects.map((item, index) => {
+          <div className="projects-box projects-box--two-col">
+            {homeSections.map((item, index) => {
               const cardTitle = t(item.titleKey);
               const cardDescription = t(item.descriptionKey);
               const cardImage = t(item.imageKey);
@@ -144,6 +167,29 @@ const Home = () => {
             })}
           </div>
         </section>
+
+        <RevealOnScroll variant="fade-up">
+          <section className="etsy-banner">
+            <div className="etsy-banner__inner">
+              <div className="etsy-banner__text">
+                <h2 className="h2 etsy-banner__title">
+                  {t("home.etsy-banner.title")}
+                </h2>
+                <p className="p etsy-banner__description">
+                  {t("home.etsy-banner.description")}
+                </p>
+              </div>
+              <a
+                href={ETSY_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="etsy-banner__cta"
+              >
+                {t("home.etsy-banner.cta")}
+              </a>
+            </div>
+          </section>
+        </RevealOnScroll>
       </div>
     </PageTransition>
   );

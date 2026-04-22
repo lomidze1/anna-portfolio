@@ -122,9 +122,19 @@
     }
   }
 
-  &.additional-work-page--test {
-    .additional-work-page__grid {
-      display: none; //აქედან დავმალე გრიდის სტილი
+  .additional-work-card__description {
+    margin: 0;
+    color: var(--color-text);
+    opacity: 0.85;
+  }
+
+  .additional-work-card__cta-button--buy {
+    background-color: var(--color-highlight);
+    color: #1a1a2e;
+
+    &:hover {
+      background-color: var(--color-accent);
+      color: var(--color-bg);
     }
   }
 

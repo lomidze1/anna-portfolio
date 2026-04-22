@@ -1,0 +1,123 @@
+@use "../utils/mixins" as *;
+@use "../utils/variables" as *;
+
+.category-nav-page {
+  padding: 4rem 0 5rem;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: hidden;
+
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 720px;
+    padding: 0 1rem;
+  }
+
+  &__subnav {
+    position: sticky;
+    top: var(--header-height, 72px);
+    z-index: 5;
+    width: 100%;
+    max-width: 100%;
+    background-color: var(--color-bg);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    padding: 0.75rem 1rem;
+    backdrop-filter: blur(8px);
+    overflow-x: auto;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__subnav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1080px;
+    margin-inline: auto;
+
+    @media (max-width: 768px) {
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      width: max-content;
+    }
+  }
+
+  &__tab {
+    appearance: none;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    padding: 0.55rem 1.25rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--color-text);
+    opacity: 0.7;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease,
+      border-color 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
+
+    &:hover,
+    &:focus-visible {
+      opacity: 1;
+      border-color: var(--color-accent);
+      transform: translateY(-1px);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--color-accent);
+      outline-offset: 3px;
+    }
+
+    &--active {
+      opacity: 1;
+      background-color: var(--color-accent);
+      color: var(--color-bg);
+      border-color: var(--color-accent);
+    }
+  }
+
+  &__grid {
+    width: 100%;
+    max-width: 1080px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.75rem;
+    padding: 0 1rem;
+  }
+
+  &__empty {
+    padding: 3rem 1rem;
+    opacity: 0.7;
+  }
+
+  @include respond(md768) {
+    padding: 3rem 0 4rem;
+    gap: 2rem;
+
+    &__grid {
+      gap: 1.25rem;
+    }
+
+    &__tab {
+      padding: 0.45rem 1rem;
+      font-size: 0.9rem;
+    }
+  }
+}

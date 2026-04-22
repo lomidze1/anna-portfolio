@@ -31,10 +31,12 @@ const GalleryModal = ({ title, images, onClose }: GalleryModalProps) => {
     if (scrollBarCompensation > 0) {
       document.body.style.paddingRight = `${scrollBarCompensation}px`;
     }
+    document.body.classList.add("modal-open");
 
     return () => {
       document.body.style.overflow = overflow;
       document.body.style.paddingRight = paddingRight;
+      document.body.classList.remove("modal-open");
     };
   }, []);
 
